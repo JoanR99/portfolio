@@ -1,6 +1,6 @@
 import Developer from './Developer';
 import HackerSVG from './hacker';
-import { motion } from 'framer-motion';
+import SvgContainer from './SvgContainer';
 
 const About = () => (
 	<div className="min-h-screen scroll-mt-24" id="about">
@@ -20,40 +20,14 @@ const About = () => (
 				fin de desarrollar programas más complejos y con interfaces de usuario
 				atractivas para cumplir con los proyectos asignados en la universidad.{' '}
 			</p>
-			<motion.div
-				initial={{
-					opacity: 0,
-					scale: 0.5,
-				}}
-				whileInView={{
-					opacity: 1,
-					scale: 1,
-				}}
-				transition={{
-					duration: 1.5,
-				}}
-				className="md:w-2/5 lg:w-1/3"
-			>
+			<SvgContainer>
 				<HackerSVG />
-			</motion.div>
+			</SvgContainer>
 		</div>
 		<div className="mt-4 mb-4 flex flex-col-reverse align-middle sm:mt-16 md:flex-row md:justify-between md:gap-8">
-			<motion.div
-				initial={{
-					opacity: 0,
-					scale: 0.5,
-				}}
-				whileInView={{
-					opacity: 1,
-					scale: 1,
-				}}
-				transition={{
-					duration: 1.5,
-				}}
-				className="md:w-2/5 lg:w-1/3"
-			>
+			<SvgContainer>
 				<Developer />
-			</motion.div>
+			</SvgContainer>
 			<p className="mb-4 md:w-3/6">
 				Así, el primer proyecto que realice como practica con estas tecnologías
 				consistió en un pequeño repositorio con MySQL como base de datos con el

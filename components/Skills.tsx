@@ -17,13 +17,14 @@ import {
 	SiFirebase,
 } from 'react-icons/si';
 import { motion } from 'framer-motion';
+import SkillCard from './SkillCard';
 
 const Skills = () => (
-	<div id="skills" className="mt-8 h-screen scroll-mt-24">
+	<div id="skills" className="mt-8 min-h-screen scroll-mt-24">
 		<h3 className="text-xl font-bold text-teal-600 sm:text-2xl md:text-3xl lg:text-4xl">
 			Habilidades
 		</h3>
-		<div className="mt-4">
+		<div className="mt-6">
 			<p>
 				A parte de los conocimientos adquiridos en la universidad, he terminado
 				ciertos cursos como{' '}
@@ -66,100 +67,104 @@ const Skills = () => (
 				recursos gratuitos como es el caso de Youtube o de la propia
 				documentación de dichas tecnologías.
 			</p>
+
+			<h3 className="mt-8 text-xl font-bold text-teal-700">
+				Principales Tecnologías
+			</h3>
 		</div>
 		<motion.div
 			initial={{
 				opacity: 0,
-				y: 200,
+				scale: 0.5,
 			}}
 			whileInView={{
 				opacity: 1,
-				y: 0,
+				scale: 1,
 			}}
 			transition={{
 				duration: 1.5,
 			}}
-			className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8"
+			className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8"
 		>
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiJavascript className='sm:w-8" mr-2 h-6 w-6 text-yellow-400 sm:h-8' />
 				<p className="font-medium">JavaScript</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiTypescript className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
 				<p className="font-medium">TypeScript</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiHtml5 className='sm:w-8" mr-2 h-6 w-6 text-orange-600 sm:h-8' />
 				<p className="font-medium">HTML5</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiCss3 className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
 				<p className="font-medium">CSS3</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiTailwindcss className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
 				<p className="font-medium">Tailwind</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiMaterialui className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
 				<p className="font-medium">Material UI</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiSass className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
 				<p className="font-medium">SASS</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiReact className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
 				<p className="font-medium">React</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiNextdotjs className='sm:w-8" mr-2 h-6 w-6 text-black sm:h-8' />
 				<p className="font-medium">Next</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiNodedotjs className='sm:w-8" mr-2 h-6 w-6 text-lime-700 sm:h-8' />
 				<p className="font-medium">Node</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiExpress className='sm:w-8" mr-2 h-6 w-6 text-lime-700 sm:h-8' />
 				<p className="font-medium">Express</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiNestjs className='sm:w-8" mr-2 h-6 w-6 text-red-700 sm:h-8' />
 				<p className="font-medium">Nest</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiFirebase className='sm:w-8" mr-2 h-6 w-6 text-orange-500 sm:h-8' />
 				<p className="font-medium">Firebase</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiGraphql className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
 				<p className="font-medium">GraphQL</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiPostgresql className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
 				<p className="font-medium">PostgreSQL</p>
-			</div>
+			</SkillCard>
 
-			<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+			<SkillCard>
 				<SiMongodb className='sm:w-8" mr-2 h-6 w-6 text-green-700 sm:h-8' />
 				<p className="font-medium">MongoDB</p>
-			</div>
+			</SkillCard>
 		</motion.div>
 	</div>
 );

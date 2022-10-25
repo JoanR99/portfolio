@@ -1,11 +1,13 @@
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, MouseEvent, MouseEventHandler } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 
 const Header = () => {
 	const [nav, setNav] = useState(false);
+	const router = useRouter();
 
 	const handleNav = () => setNav((prevState) => !prevState);
 
@@ -44,57 +46,59 @@ const Header = () => {
 					<a href="#hero">JR</a>
 				</motion.h1>
 
-				<div>
-					<motion.nav
-						initial={{
-							y: -500,
-							opacity: 0,
-							scale: 0.5,
-						}}
-						animate={{
-							y: 0,
-							opacity: 1,
-							scale: 1,
-						}}
-						transition={{
-							duration: 1.5,
-						}}
-						className="hidden space-x-8 text-lg font-medium md:flex"
-						aria-label="main"
-					>
-						<a
-							href="#about"
-							className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
+				{!router.pathname.includes('/projects') && (
+					<div>
+						<motion.nav
+							initial={{
+								y: -500,
+								opacity: 0,
+								scale: 0.5,
+							}}
+							animate={{
+								y: 0,
+								opacity: 1,
+								scale: 1,
+							}}
+							transition={{
+								duration: 1.5,
+							}}
+							className="hidden space-x-8 text-lg font-medium md:flex"
+							aria-label="main"
 						>
-							Sobre mi
-						</a>
+							<a
+								href="#about"
+								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
+							>
+								Sobre mi
+							</a>
 
-						<a
-							href="#skills"
-							className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
-						>
-							Habilidades
-						</a>
+							<a
+								href="#skills"
+								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
+							>
+								Habilidades
+							</a>
 
-						<a
-							href="#projects"
-							className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
-						>
-							Proyectos
-						</a>
+							<a
+								href="#projects"
+								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
+							>
+								Proyectos
+							</a>
 
-						<a
-							href="#contact"
-							className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
-						>
-							Contáctame
-						</a>
-					</motion.nav>
+							<a
+								href="#contact"
+								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
+							>
+								Contáctame
+							</a>
+						</motion.nav>
 
-					<div onClick={handleNav} className="cursor-pointer md:hidden">
-						<AiOutlineMenu size={25} />
+						<div onClick={handleNav} className="cursor-pointer md:hidden">
+							<AiOutlineMenu size={25} />
+						</div>
 					</div>
-				</div>
+				)}
 			</section>
 
 			<div
