@@ -55,7 +55,7 @@ const Projects = () => (
 						<SiExpress className='sm:w-8" mr-4 h-6 w-6 text-lime-700 sm:h-8' />
 						<SiJest className='sm:w-8" mr-4 h-6 w-6 text-red-800 sm:h-8' />
 					</div>
-					<Link href="/projects/web-access">
+					<Link href="/projects/WebAccess">
 						<p className="mt-4 cursor-pointer text-sm font-medium text-pink-700">
 							Ver Proyecto
 						</p>

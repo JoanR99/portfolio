@@ -18,7 +18,7 @@ const About = () => (
 				desarrollando pequeños programas que eran ejecutados en la consola.
 				Posteriormente, comencé a estudiar HTML, CSS, JavaScript y PHP con el
 				fin de desarrollar programas más complejos y con interfaces de usuario
-				atractivas para cumplir con los proyectos asignados en la universidad.{' '}
+				atractivas para cumplir con los proyectos asignados en la universidad.
 			</p>
 			<SvgContainer>
 				<HackerSVG />
@@ -30,16 +30,14 @@ const About = () => (
 			</SvgContainer>
 			<p className="mb-4 md:w-3/6">
 				Así, el primer proyecto que realice como practica con estas tecnologías
-				consistió en un pequeño repositorio con MySQL como base de datos con el
-				fin de almacenar y organizar data requerida para ayudar a personas de
-				una zona rural sin acceso a internet donde viven algunos familiares a
-				optar a bonos que brinda el gobierno a través de un portal web. El
-				concluir este proyecto y darme cuenta de que podía desarrollar software
-				que realmente fuera de utilidad para otras personas me hizo terminar de
-				enamorar de la programación en general y entendí que quería dedicarme a
-				esto. Desde entonces decidí especializarme en desarrollo web,
-				aprendiendo tanto de forma autodidacta como a través de cursos y
-				bootcamps.
+				consistió en un pequeño repositorio con el fin de almacenar y organizar
+				información requerida para ayudar a personas de una zona rural donde
+				viven algunos familiares a optar a bonos que brinda el gobierno a través
+				de un portal web, siendo esta la primera vez que comprendí que quería
+				dedicarme a esta profesión, ya que sentí una satisfacción inmensa al ver
+				que podía desarrollar software que fuera de alguna utilidad. Desde
+				entonces decidí especializarme en desarrollo web, aprendiendo tanto de
+				forma autodidacta como a través de cursos y bootcamps.
 			</p>
 		</div>
 	</div>

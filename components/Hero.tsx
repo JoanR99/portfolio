@@ -11,7 +11,7 @@ const Hero = () => {
 	});
 
 	return (
-		<main className=" min-h-screen pt-24 sm:pt-28 md:pt-32" id="hero">
+		<main className="min-h-screen pt-24 sm:pt-28 md:pt-32" id="hero">
 			<h2 className="text-center text-2xl font-bold sm:text-3xl md:mb-2 md:text-4xl lg:text-5xl">
 				¿Hola que tal? Soy <span className="text-teal-600">Joan Romero</span>
 			</h2>

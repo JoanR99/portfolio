@@ -26,8 +26,13 @@ const Skills = () => (
 		</h3>
 		<div className="mt-6">
 			<p>
-				A parte de los conocimientos adquiridos en la universidad, he terminado
-				ciertos cursos como{' '}
+				Ademas de programación básica, en la universidad aprendí conceptos mas
+				de programación mas avanzados, como es el caso de la programación
+				orientada a objetos, las estructuras de datos, los algoritmos y la
+				recursividad, aunado a conceptos básicos de la ingeniería de software,
+				como es el caso del ciclo de vida del software, partiendo desde el
+				análisis hasta el diseño e implementación de sistemas. Por otro lado, he
+				terminado ciertos cursos como{' '}
 				<a
 					href="https://www.udemy.com/certificate/UC-b9587b26-e83f-40ba-b75c-26ad65272178/"
 					target="_blank"
