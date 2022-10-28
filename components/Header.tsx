@@ -43,10 +43,14 @@ const Header = () => {
 					}}
 					className="text-2xl font-bold sm:text-3xl md:text-4xl"
 				>
-					<a href="#hero">JR</a>
+					{!router.pathname.includes('/projects') ? (
+						<a href="#hero">JR</a>
+					) : (
+						<Link href="/#hero">JR</Link>
+					)}
 				</motion.h1>
 
-				{!router.pathname.includes('/projects') && (
+				{!router.pathname.includes('/projects') ? (
 					<div>
 						<motion.nav
 							initial={{
@@ -98,6 +102,58 @@ const Header = () => {
 							<AiOutlineMenu size={25} />
 						</div>
 					</div>
+				) : (
+					<div>
+						<motion.nav
+							initial={{
+								y: -500,
+								opacity: 0,
+								scale: 0.5,
+							}}
+							animate={{
+								y: 0,
+								opacity: 1,
+								scale: 1,
+							}}
+							transition={{
+								duration: 1.5,
+							}}
+							className="hidden space-x-8 text-lg font-medium md:flex"
+							aria-label="main"
+						>
+							<Link
+								href="/#about"
+								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
+							>
+								Sobre mi
+							</Link>
+
+							<Link
+								href="/#skills"
+								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
+							>
+								Habilidades
+							</Link>
+
+							<Link
+								href="/#projects"
+								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
+							>
+								Proyectos
+							</Link>
+
+							<Link
+								href="/#contact"
+								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
+							>
+								Contáctame
+							</Link>
+						</motion.nav>
+
+						<div onClick={handleNav} className="cursor-pointer md:hidden">
+							<AiOutlineMenu size={25} />
+						</div>
+					</div>
 				)}
 			</section>
 
@@ -131,23 +187,51 @@ const Header = () => {
 						</div>
 					</div>
 					<div className="flex flex-col p-4 text-xl">
-						<nav onClick={handleNav} className="flex flex-col p-4 text-xl">
-							<a href="#about" className="py-4 hover:opacity-90">
-								Sobre mi
-							</a>
+						{!router.pathname.includes('/projects') ? (
+							<nav onClick={handleNav} className="flex flex-col p-4 text-xl">
+								<a href="#about" className="py-4 hover:opacity-90">
+									Sobre mi
+								</a>
 
-							<a href="#skills" className="py-4 hover:opacity-90">
-								Habilidades
-							</a>
+								<a href="#skills" className="py-4 hover:opacity-90">
+									Habilidades
+								</a>
 
-							<a href="#projects" className="py-4 hover:opacity-90">
-								Proyectos
-							</a>
+								<a href="#projects" className="py-4 hover:opacity-90">
+									Proyectos
+								</a>
 
-							<a href="#contact" className="py-4 hover:opacity-90">
-								Contáctame
-							</a>
-						</nav>
+								<a href="#contact" className="py-4 hover:opacity-90">
+									Contáctame
+								</a>
+							</nav>
+						) : (
+							<nav onClick={handleNav} className="flex flex-col p-4 text-xl">
+								<Link href="/#about">
+									<p className="cursor-pointer py-4 hover:opacity-90">
+										Sobre mi
+									</p>
+								</Link>
+
+								<Link href="/#skills">
+									<p className="cursor-pointer py-4 hover:opacity-90">
+										Habilidades
+									</p>
+								</Link>
+
+								<Link href="?#projects">
+									<p className="cursor-pointer py-4 hover:opacity-90">
+										Proyectos
+									</p>
+								</Link>
+
+								<Link href="/#contact">
+									<p className="cursor-pointer py-4 hover:opacity-90">
+										Contáctame
+									</p>
+								</Link>
+							</nav>
+						)}
 						<div className="pt-40">
 							<p className="font-medium">Vamos a conectar</p>
 							<div className="mt-2 flex w-[30%] items-center">
