@@ -1,0 +1,30 @@
+import { ReactNode } from 'react';
+import { motion } from 'framer-motion';
+
+type Props = {
+	children: ReactNode;
+	className: string;
+};
+
+const ImageContainer = ({ children, className }: Props) => {
+	return (
+		<motion.div
+			initial={{
+				opacity: 0,
+				scale: 0.5,
+			}}
+			whileInView={{
+				opacity: 1,
+				scale: 1,
+			}}
+			transition={{
+				duration: 1.5,
+			}}
+			className={className}
+		>
+			{children}
+		</motion.div>
+	);
+};
+
+export default ImageContainer;

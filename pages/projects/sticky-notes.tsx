@@ -1,28 +1,22 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { BsGithub } from 'react-icons/bs';
-import { IoOpen } from 'react-icons/io5';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import {
-	SiJavascript,
 	SiTypescript,
-	SiSass,
 	SiReact,
 	SiNodedotjs,
 	SiExpress,
-	SiNestjs,
-	SiGraphql,
 	SiPostgresql,
-	SiMongodb,
 	SiMaterialui,
-	SiStyledcomponents,
-	SiRedux,
 	SiJest,
 	SiPrisma,
 } from 'react-icons/si';
-import BlurImage from '../../components/BlurImage';
-import Link from 'next/link';
+import GithubButton from '../../components/GithubButton';
+import VisitButton from '../../components/VisitButton';
+import ImageContainer from '../../components/ImageContainer';
+import WebAccessCard from '../../components/WebAccessCard';
+import CoroshopCard from '../../components/CoroshopCard';
 
 const Home: NextPage = () => {
 	return (
@@ -49,89 +43,19 @@ const Home: NextPage = () => {
 					</p>
 
 					<div className="mt-6 flex w-full justify-center">
-						<motion.a
-							initial={{
-								x: 200,
-								opacity: 0,
-								scale: 0.5,
-							}}
-							animate={{
-								x: 0,
-								opacity: 1,
-								scale: 1,
-							}}
-							transition={{
-								duration: 1.5,
-							}}
-							href="https://github.com/JoanR99/sticky-notes-server"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="mr-4 flex flex-col items-center justify-center"
-						>
-							<BsGithub className="h-6 w-6 text-pink-700 hover:scale-105 hover:opacity-90 sm:h-7 sm:w-7" />
+						<GithubButton href="https://github.com/JoanR99/sticky-notes-server">
 							Backend
-						</motion.a>
-						<motion.a
-							initial={{
-								x: 200,
-								opacity: 0,
-								scale: 0.5,
-							}}
-							animate={{
-								x: 0,
-								opacity: 1,
-								scale: 1,
-							}}
-							transition={{
-								duration: 1.5,
-							}}
-							href="https://github.com/JoanR99/sticky-notes-client"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="mr-4 flex flex-col items-center justify-center"
-						>
-							<BsGithub className="h-6 w-6 text-pink-700  hover:scale-105 hover:opacity-90 sm:h-7 sm:w-7" />
+						</GithubButton>
+						<GithubButton href="https://github.com/JoanR99/sticky-notes-client">
 							Frontend
-						</motion.a>
-						<motion.a
-							initial={{
-								x: 200,
-								opacity: 0,
-								scale: 0.5,
-							}}
-							animate={{
-								x: 0,
-								opacity: 1,
-								scale: 1,
-							}}
-							transition={{
-								duration: 1.5,
-							}}
-							href="https://sticky-notes-neon.vercel.app/"
-							target="_blank"
-							rel="noopener noreferrer"
-							className="mr-4 flex flex-col items-center justify-center"
-						>
-							<IoOpen className="h-6 w-6 text-pink-700  hover:scale-105 hover:opacity-90 sm:h-7 sm:w-7" />
+						</GithubButton>
+						<VisitButton href="https://sticky-notes-neon.vercel.app/">
 							Visitar
-						</motion.a>
+						</VisitButton>
 					</div>
 
 					<div className="mt-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<motion.div
-							initial={{
-								opacity: 0,
-								scale: 0.5,
-							}}
-							whileInView={{
-								opacity: 1,
-								scale: 1,
-							}}
-							transition={{
-								duration: 1.5,
-							}}
-							className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2"
-						>
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2">
 							<Image
 								src="/images/sn-frame.png"
 								alt="Sticky Notes"
@@ -139,7 +63,7 @@ const Home: NextPage = () => {
 								height={1400}
 								className="rounded-xl"
 							/>
-						</motion.div>
+						</ImageContainer>
 
 						<div className="mt-8 flex h-fit flex-col lg:mt-0">
 							<div>
@@ -183,20 +107,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="my-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<motion.div
-							initial={{
-								opacity: 0,
-								scale: 0.5,
-							}}
-							whileInView={{
-								opacity: 1,
-								scale: 1,
-							}}
-							transition={{
-								duration: 1.5,
-							}}
-							className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400"
-						>
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400">
 							<Image
 								src="/images/sn-2.png"
 								alt="Sticky Notes - Login"
@@ -204,7 +115,7 @@ const Home: NextPage = () => {
 								height={1400}
 								className="rounded-xl"
 							/>
-						</motion.div>
+						</ImageContainer>
 
 						<div className="mt-8 h-fit">
 							<h4 className="text-xl font-bold text-teal-700">
@@ -225,20 +136,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="my-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<motion.div
-							initial={{
-								opacity: 0,
-								scale: 0.5,
-							}}
-							whileInView={{
-								opacity: 1,
-								scale: 1,
-							}}
-							transition={{
-								duration: 1.5,
-							}}
-							className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2 lg:mt-6"
-						>
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2 lg:mt-6">
 							<Image
 								src="/images/sn-3.png"
 								alt="Sticky Notes - Sign up"
@@ -246,7 +144,7 @@ const Home: NextPage = () => {
 								height={1400}
 								className="rounded-xl"
 							/>
-						</motion.div>
+						</ImageContainer>
 
 						<div className="my-8 h-fit lg:col-span-2 lg:mb-4">
 							<h4 className="text-xl font-bold text-teal-700">
@@ -278,20 +176,7 @@ const Home: NextPage = () => {
 							</p>
 						</div>
 
-						<motion.div
-							initial={{
-								opacity: 0,
-								scale: 0.5,
-							}}
-							whileInView={{
-								opacity: 1,
-								scale: 1,
-							}}
-							transition={{
-								duration: 1.5,
-							}}
-							className="m-2 mt-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-3 lg:mt-6"
-						>
+						<ImageContainer className="m-2 mt-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-3 lg:mt-6">
 							<Image
 								src="/images/sn-4.png"
 								alt="Sticky Notes - Add note"
@@ -299,7 +184,7 @@ const Home: NextPage = () => {
 								height={1400}
 								className="rounded-xl"
 							/>
-						</motion.div>
+						</ImageContainer>
 					</div>
 
 					<div className="my-8 lg:mt-10">
@@ -332,20 +217,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="my-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<motion.div
-							initial={{
-								opacity: 0,
-								scale: 0.5,
-							}}
-							whileInView={{
-								opacity: 1,
-								scale: 1,
-							}}
-							transition={{
-								duration: 1.5,
-							}}
-							className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2"
-						>
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2">
 							<Image
 								src="/images/sn-5.png"
 								alt="Sticky Notes - Note"
@@ -353,7 +225,7 @@ const Home: NextPage = () => {
 								height={1400}
 								className="rounded-xl"
 							/>
-						</motion.div>
+						</ImageContainer>
 
 						<div className="mt-8 flex h-fit flex-col">
 							<div>
@@ -382,83 +254,9 @@ const Home: NextPage = () => {
 				<div className=" mt-24">
 					<h4 className="text-xl font-bold text-teal-700">Otros Proyectos</h4>
 					<div className="mt-8 grid w-full grid-cols-1 gap-6 md:gap-8">
-						<motion.article
-							initial={{
-								opacity: 0,
-								scale: 0.5,
-							}}
-							whileInView={{
-								opacity: 1,
-								scale: 1,
-							}}
-							transition={{
-								duration: 1.5,
-							}}
-							className="grid grid-cols-1 gap-6 rounded-xl border border-solid p-2 shadow-xl md:grid-cols-2"
-						>
-							<BlurImage src="/images/web-access.png" alt="WebAcess" />
+						<WebAccessCard />
 
-							<div className="flex flex-col items-center justify-between p-4 md:items-start">
-								<h3 className="text-md font-medium text-teal-700">WebAccess</h3>
-								<p className="mt-2 text-center text-sm md:text-left">
-									Herramienta de evaluación automática de accesibilidad web y
-									evaluador de contraste.
-								</p>
-								<div className="mt-4 flex">
-									<SiJavascript className='sm:w-8" mr-4 h-6 w-6 text-yellow-400 sm:h-8' />
-									<SiReact className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
-									<SiSass className='sm:w-8" mr-4 h-6 w-6 text-pink-700 sm:h-8' />
-									<SiNodedotjs className='sm:w-8" mr-4 h-6 w-6 text-lime-700 sm:h-8' />
-									<SiExpress className='sm:w-8" mr-4 h-6 w-6 text-lime-700 sm:h-8' />
-									<SiJest className='sm:w-8" mr-4 h-6 w-6 text-red-800 sm:h-8' />
-								</div>
-								<Link href="/projects/web-access">
-									<p className="mt-4 cursor-pointer text-sm font-medium text-pink-700">
-										Ver Proyecto
-									</p>
-								</Link>
-							</div>
-						</motion.article>
-
-						<motion.article
-							initial={{
-								opacity: 0,
-								scale: 0.5,
-							}}
-							whileInView={{
-								opacity: 1,
-								scale: 1,
-							}}
-							transition={{
-								duration: 1.5,
-							}}
-							className="grid grid-cols-1 gap-4 rounded-xl border border-solid shadow-xl md:grid-cols-2"
-						>
-							<BlurImage src="/images/coroshop.png" alt="Coroshop" />
-
-							<div className="flex flex-col items-center justify-between p-4 md:items-start">
-								<h3 className="text-md font-medium text-teal-700">Coroshop</h3>
-								<p className="mt-2 text-center text-sm md:text-left">
-									E-commerce con pagos en Stripe o PayPal.
-								</p>
-								<div className="mt-4 flex flex-wrap justify-center">
-									<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
-									<SiReact className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
-									<SiRedux className='sm:w-8" mr-4 h-6 w-6 text-purple-700 sm:h-8' />
-									<SiStyledcomponents className='sm:w-8" mr-4 h-12 w-12 text-pink-700 sm:h-8' />
-									<SiNodedotjs className='sm:w-8" mr-4 h-6 w-6 text-lime-700 sm:h-8' />
-									<SiNestjs className='sm:w-8" mr-4 h-6 w-6 text-red-700 sm:h-8' />
-									<SiGraphql className='sm:w-8" mr-4 h-6 w-6 text-pink-700 sm:h-8' />
-									<SiMongodb className='sm:w-8" mr-4 h-6 w-6 text-green-700 sm:h-8' />
-									<SiJest className='sm:w-8" mr-4 h-6 w-6 text-red-800 sm:h-8' />
-								</div>
-								<Link href="/projects/coroshop">
-									<p className="mt-4 cursor-pointer text-sm font-medium text-pink-700">
-										Ver Proyecto
-									</p>
-								</Link>
-							</div>
-						</motion.article>
+						<CoroshopCard />
 					</div>
 				</div>
 			</div>
