@@ -136,7 +136,7 @@ const Home: NextPage = () => {
 						>
 							<Image
 								src="/images/web-access-frame.png"
-								alt="web-access"
+								alt="WebAccess"
 								width={2000}
 								height={1400}
 								className="rounded-xl"
@@ -183,8 +183,8 @@ const Home: NextPage = () => {
 							className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400"
 						>
 							<Image
-								src="/images/web-access-frame.png"
-								alt="web-access"
+								src="/images/wa-2.png"
+								alt="WebAccess - Section"
 								width={2000}
 								height={1400}
 								className="rounded-xl"
@@ -233,8 +233,8 @@ const Home: NextPage = () => {
 							className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2 lg:mt-6"
 						>
 							<Image
-								src="/images/web-access-frame.png"
-								alt="web-access"
+								src="/images/wa-3.png"
+								alt="WebAccess - Accessibility evaluation"
 								width={2000}
 								height={1400}
 								className="rounded-xl"
@@ -288,8 +288,8 @@ const Home: NextPage = () => {
 							className="m-2 mt-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-3 lg:mt-6"
 						>
 							<Image
-								src="/images/web-access-frame.png"
-								alt="web-access"
+								src="/images/wa-4.png"
+								alt="WebAccess - Results"
 								width={2000}
 								height={1400}
 								className="rounded-xl"
@@ -334,8 +334,8 @@ const Home: NextPage = () => {
 							className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2"
 						>
 							<Image
-								src="/images/web-access-frame.png"
-								alt="web-access"
+								src="/images/wa-5.png"
+								alt="WebAccess - Contrast checker"
 								width={2000}
 								height={1400}
 								className="rounded-xl"
@@ -385,14 +385,14 @@ const Home: NextPage = () => {
 							}}
 							className="grid grid-cols-1 gap-4 rounded-xl border border-solid shadow-xl md:grid-cols-2"
 						>
-							<BlurImage src="/images/sticky-notes.png" alt="WebAcess" />
+							<BlurImage src="/images/sticky-notes.png" alt="Sticky Notes" />
 
 							<div className="flex flex-col items-center justify-between p-4 md:items-start">
 								<h3 className="text-md font-medium text-teal-700">
 									Sticky Notes
 								</h3>
 								<p className="mt-2 text-center text-sm md:text-left">
-									Aplicación de notas.
+									Aplicación de notas con internacionalización.
 								</p>
 								<div className="mt-4 flex">
 									<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
@@ -426,12 +426,12 @@ const Home: NextPage = () => {
 							}}
 							className="grid grid-cols-1 gap-4 rounded-xl border border-solid shadow-xl md:grid-cols-2"
 						>
-							<BlurImage src="/images/web-access.png" alt="WebAcess" />
+							<BlurImage src="/images/coroshop.png" alt="Coroshop" />
 
 							<div className="flex flex-col items-center justify-between p-4 md:items-start">
 								<h3 className="text-md font-medium text-teal-700">Coroshop</h3>
 								<p className="mt-2 text-center text-sm md:text-left">
-									E-commerce.
+									E-commerce con pagos en Stripe o PayPal.
 								</p>
 								<div className="mt-4 flex flex-wrap justify-center">
 									<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />

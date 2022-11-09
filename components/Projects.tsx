@@ -55,7 +55,7 @@ const Projects = () => (
 						<SiExpress className='sm:w-8" mr-4 h-6 w-6 text-lime-700 sm:h-8' />
 						<SiJest className='sm:w-8" mr-4 h-6 w-6 text-red-800 sm:h-8' />
 					</div>
-					<Link href="/projects/WebAccess">
+					<Link href="/projects/web-access">
 						<p className="mt-4 cursor-pointer text-sm font-medium text-pink-700">
 							Ver Proyecto
 						</p>
@@ -77,12 +77,12 @@ const Projects = () => (
 				}}
 				className="grid grid-cols-1 gap-4 rounded-xl border border-solid shadow-xl md:grid-cols-2"
 			>
-				<BlurImage src="/images/sticky-notes.png" alt="WebAcess" />
+				<BlurImage src="/images/sticky-notes.png" alt="Sticky  Notes" />
 
 				<div className="flex flex-col items-center justify-between p-4 md:items-start">
 					<h3 className="text-md font-medium text-teal-700">Sticky Notes</h3>
 					<p className="mt-2 text-center text-sm md:text-left">
-						Aplicación de notas.
+						Aplicación de notas con internacionalización.
 					</p>
 					<div className="mt-4 flex">
 						<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
@@ -116,11 +116,13 @@ const Projects = () => (
 				}}
 				className="grid grid-cols-1 gap-4 rounded-xl border border-solid shadow-xl md:grid-cols-2"
 			>
-				<BlurImage src="/images/web-access.png" alt="WebAcess" />
+				<BlurImage src="/images/coroshop.png" alt="Coroshop" />
 
 				<div className="flex flex-col items-center justify-between p-4 md:items-start">
 					<h3 className="text-md font-medium text-teal-700">Coroshop</h3>
-					<p className="mt-2 text-center text-sm md:text-left">E-commerce.</p>
+					<p className="mt-2 text-center text-sm md:text-left">
+						E-commerce con pagos en Stripe o PayPal.
+					</p>
 					<div className="mt-4 flex flex-wrap justify-center">
 						<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 						<SiReact className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
