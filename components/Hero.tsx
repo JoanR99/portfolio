@@ -1,27 +1,21 @@
 import Image from 'next/image';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
-import { useTypewriter, Cursor } from 'react-simple-typewriter';
+
 import { motion } from 'framer-motion';
+import { useTranslation } from 'next-i18next';
+import TypingBanner from './TypingBanner';
 
 const Hero = () => {
-	const [text, count] = useTypewriter({
-		words: ['Desarrollador Full Stack', 'Ingeniero de Sistemas'],
-		loop: true,
-		delaySpeed: 2000,
-	});
+	const { t } = useTranslation('');
 
 	return (
 		<main className="min-h-screen pt-24 sm:pt-28 md:pt-32" id="hero">
 			<h2 className="text-center text-2xl font-bold sm:text-3xl md:mb-2 md:text-4xl lg:text-5xl">
-				¿Hola que tal? Soy <span className="text-teal-600">Joan Romero</span>
+				{t('hero.greet')} <span className="text-teal-600">Joan Romero</span>
 			</h2>
-			<h2 className="text-center text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl">
-				<span className="text-teal-600">{text}</span>
-				<Cursor cursorColor="#0D9488" />
-			</h2>
+			<TypingBanner />
 			<p className="text-md mt-6 text-center sm:mt-8 sm:text-lg md:text-xl">
-				Puedo desarrollar aplicaciones full stack con tecnologías como
-				JavaScript, TypeScript, React, Node, Express, Nest, PostgreSQL o MongoDB
+				{t('hero.skills')}
 			</p>
 			<div className="mt-5 flex justify-center align-middle">
 				<motion.a
@@ -85,7 +79,7 @@ const Hero = () => {
 			</motion.div>
 
 			<div className="mt-8 flex justify-center">
-				<motion.button
+				<motion.a
 					initial={{
 						y: 100,
 						opacity: 0,
@@ -105,9 +99,11 @@ const Hero = () => {
 						transition: { duration: 0.1 },
 					}}
 					className="rounded-xl border border-solid border-pink-700 bg-pink-700 p-2 font-medium text-white shadow-xl shadow-gray-400"
+					href="/CV_Joan_Romero.pdf"
+					download
 				>
-					Descargar CV
-				</motion.button>
+					{t('hero.cv')}
+				</motion.a>
 			</div>
 		</main>
 	);

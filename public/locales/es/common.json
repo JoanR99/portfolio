@@ -1,0 +1,30 @@
+{
+	"header": {
+		"about": "Sobre mi",
+		"skills": "Habilidades",
+		"projects": "Proyectos",
+		"contact": "Contáctame",
+		"connect": "Vamos a conectar"
+	},
+	"hero": {
+		"greet": "¿Hola que tal? Soy",
+		"banner": {
+			"developer": "Desarrollador Full Stack",
+			"engineer": "Ingeniero de Sistemas"
+		},
+		"skills": "Puedo desarrollar aplicaciones full stack con tecnologías como JavaScript, TypeScript, React, Node, Express, Nest, PostgreSQL o MongoDB",
+		"cv": "Descargar CV"
+	},
+	"about": {
+		"title": "Sobre mi",
+		"first_p": "Mi viaje en el mundo de la programación comenzó con las primeras clases de programación básica cursadas en la universidad. Para ese entonces, mi conocimiento en cuanto al desarrollo web y la programación eran prácticamente nulos, a tal punto que tenía el pensamiento cliché de que todos los programadores eran alguna clase de hacker. De esta manera, a través del lenguaje C++ aprendí las nociones básicas de la programación, desarrollando pequeños programas que eran ejecutados en la consola. Posteriormente, comencé a estudiar HTML, CSS, JavaScript y PHP con el fin de desarrollar programas más complejos y con interfaces de usuario atractivas para cumplir con los proyectos asignados en la universidad.",
+		"second_p": "Así, el primer proyecto que realice como practica con estas tecnologías consistió en un pequeño repositorio con el fin de almacenar y organizar información requerida para ayudar a personas de una zona rural donde viven algunos familiares a optar a bonos que brinda el gobierno a través de un portal web, siendo esta la primera vez que comprendí que quería dedicarme a esta profesión, ya que sentí una satisfacción inmensa al ver que podía desarrollar software que fuera de alguna utilidad. Desde entonces decidí especializarme en desarrollo web, aprendiendo tanto de forma autodidacta como a través de cursos y bootcamps."
+	},
+	"skills": {
+		"title": "Habilidades",
+		"first_p": "Ademas de programación básica, en la universidad aprendí conceptos mas de programación mas avanzados, como es el caso de la programación orientada a objetos, las estructuras de datos, los algoritmos y la recursividad, aunado a conceptos básicos de la ingeniería de software, como es el caso del ciclo de vida del software, partiendo desde el análisis hasta el diseño e implementación de sistemas. Por otro lado, he terminado ciertos cursos como",
+		"&": "y",
+		"second_p": ", además de aprender otras tecnologías, frameworks y librerías con recursos gratuitos como es el caso de Youtube o de la propia documentación de dichas tecnologías.",
+		"second_t": "Principales tecnologías"
+	}
+}

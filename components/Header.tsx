@@ -4,10 +4,16 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
+import { useTranslation } from 'next-i18next';
 
 const Header = () => {
 	const [nav, setNav] = useState(false);
 	const router = useRouter();
+	const { t } = useTranslation('');
+
+	const { locales, locale: activeLocale } = router;
+
+	const otherLocales = locales?.filter((locale) => locale !== activeLocale);
 
 	const handleNav = () => setNav((prevState) => !prevState);
 
@@ -50,6 +56,27 @@ const Header = () => {
 					)}
 				</motion.h1>
 
+				<div>
+					<span className="text-muted cursor-pointer">
+						{otherLocales?.map((locale) => {
+							const { pathname, query, asPath } = router;
+							return (
+								<span key={'locale-' + locale}>
+									<Link href={{ pathname, query }} as={asPath} locale={locale}>
+										<a>
+											{locale === 'en'
+												? 'English'
+												: locale === 'es'
+												? 'Español'
+												: null}
+										</a>
+									</Link>
+								</span>
+							);
+						})}
+					</span>
+				</div>
+
 				{!router.pathname.includes('/projects') ? (
 					<div>
 						<motion.nav
@@ -73,28 +100,28 @@ const Header = () => {
 								href="#about"
 								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
 							>
-								Sobre mi
+								{t('header.about')}
 							</a>
 
 							<a
 								href="#skills"
 								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
 							>
-								Habilidades
+								{t('header.skills')}
 							</a>
 
 							<a
 								href="#projects"
 								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
 							>
-								Proyectos
+								{t('header.projects')}
 							</a>
 
 							<a
 								href="#contact"
 								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
 							>
-								Contáctame
+								{t('header.contact')}
 							</a>
 						</motion.nav>
 
@@ -125,28 +152,28 @@ const Header = () => {
 								href="/#about"
 								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
 							>
-								Sobre mi
+								{t('header.about')}
 							</Link>
 
 							<Link
 								href="/#skills"
 								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
 							>
-								Habilidades
+								{t('header.skills')}
 							</Link>
 
 							<Link
 								href="/#projects"
 								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
 							>
-								Proyectos
+								{t('header.projects')}
 							</Link>
 
 							<Link
 								href="/#contact"
 								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
 							>
-								Contáctame
+								{t('header.contact')}
 							</Link>
 						</motion.nav>
 
@@ -190,50 +217,50 @@ const Header = () => {
 						{!router.pathname.includes('/projects') ? (
 							<nav onClick={handleNav} className="flex flex-col p-4 text-xl">
 								<a href="#about" className="py-4 hover:opacity-90">
-									Sobre mi
+									{t('header.about')}
 								</a>
 
 								<a href="#skills" className="py-4 hover:opacity-90">
-									Habilidades
+									{t('header.skills')}
 								</a>
 
 								<a href="#projects" className="py-4 hover:opacity-90">
-									Proyectos
+									{t('header.projects')}
 								</a>
 
 								<a href="#contact" className="py-4 hover:opacity-90">
-									Contáctame
+									{t('header.contact')}
 								</a>
 							</nav>
 						) : (
 							<nav onClick={handleNav} className="flex flex-col p-4 text-xl">
 								<Link href="/#about">
 									<p className="cursor-pointer py-4 hover:opacity-90">
-										Sobre mi
+										{t('header.about')}
 									</p>
 								</Link>
 
 								<Link href="/#skills">
 									<p className="cursor-pointer py-4 hover:opacity-90">
-										Habilidades
+										{t('header.skills')}
 									</p>
 								</Link>
 
 								<Link href="?#projects">
 									<p className="cursor-pointer py-4 hover:opacity-90">
-										Proyectos
+										{t('header.projects')}
 									</p>
 								</Link>
 
 								<Link href="/#contact">
 									<p className="cursor-pointer py-4 hover:opacity-90">
-										Contáctame
+										{t('header.contact')}
 									</p>
 								</Link>
 							</nav>
 						)}
 						<div className="pt-40">
-							<p className="font-medium">Vamos a conectar</p>
+							<p className="font-medium">{t('header.connect')}</p>
 							<div className="mt-2 flex w-[30%] items-center">
 								<a
 									href="https://www.linkedin.com/in/joanr99/"

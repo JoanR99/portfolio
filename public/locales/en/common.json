@@ -1,0 +1,30 @@
+{
+	"header": {
+		"about": "About me",
+		"skills": "Skills",
+		"projects": "Projects",
+		"contact": "Contact me",
+		"connect": "Let's connect"
+	},
+	"hero": {
+		"greet": "Hi, I'm",
+		"banner": {
+			"developer": "Full Stack Developer",
+			"engineer": "System Engineer"
+		},
+		"skills": "I can develop full stack applications with technologies like JavaScript, TypeScript, React, Node, Express, Nest, PostgreSQL or MongoDB",
+		"cv": "Download CV"
+	},
+	"about": {
+		"title": "About me",
+		"first_p": "My journey into the world of programming began with the first basic programming classes I took in college. At that time, my knowledge of web development and programming was practically nil, to the point that I had the clichéd thought that all programmers were some kind of hacker. In this way, through the C++ language I learned the basic notions of programming, developing small programs that were executed in the console. Subsequently, I began to study HTML, CSS, JavaScript and PHP in order to develop more complex programs with attractive user interfaces to fulfill the assigned projects in the university.",
+		"second_p": "Thus, the first project that I carried out as a practice with these technologies consisted of a small repository in order to store and organize information required to help people in a rural area where some relatives live to opt for bonuses provided by the government through a web portal, this being the first time I understood that I wanted to dedicate myself to this profession, since I felt immense satisfaction when I saw that I could develop software that was of some use. Since then I decided to specialize in web development, learning both self-taught and through courses and bootcamps."
+	},
+	"skills": {
+		"title": "Skills",
+		"first_p": "In addition to basic programming, at university I learned more advanced programming concepts, such as object-oriented programming, data structures, algorithms, and recursion, along with basic concepts of software engineering, such as the case of the software life cycle, starting from the analysis to the design and implementation of systems. On the other hand, I have finished certain courses like",
+		"&": "and",
+		"second_p": ", in addition to learning other technologies, frameworks and libraries with free resources such as YouTube or the documentation of said technologies.",
+		"second_t": "Main technologies"
+	}
+}
