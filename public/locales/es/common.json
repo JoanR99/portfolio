@@ -55,5 +55,33 @@
 	"footer": {
 		"copy": "Copyright por Joan Romero 2022",
 		"rights": "Todos los derechos reservados"
+	},
+	"web_access": {
+		"desc": "WebAccess es un sitio web que dispone de dos herramientas con el fin de ayudar a los desarrolladores web a crear contenido más accesible. La primera herramienta se trata de un evaluador automático de accesibilidad web, el cual permite evaluar código HTML insertando el URL de una página web o el propio código HTML, aplicando hasta 13 técnicas propuestas por la WCAG en su versión 2.1. Por otro lado, la segunda herramienta se trata de un evaluador de contraste, el cual permite conocer si la ratio de contraste entre dos colores (texto y fondo) cumple con alguno de los niveles establecidos por la WCAG.",
+		"visit": "Visitar",
+		"stack": {
+			"desc": "En el lado del frontend utilice React como framework base, manejando el estado de la aplicación con hooks y con Jotai debido a su simplicidad para controlar el estado evitando rerenders innecesarios y utilizando SASS para los estilos. El backend por su parte, esta conformado por un servidor en Express, utilizando para analizar código HTML y realizar la evaluación una librería llamada Cheerio, la cual dispone de una api sencilla para manipular el DOM de un documento HTML."
+		},
+		"origin": {
+			"title": "Origen de la Idea",
+			"desc": "La idea de desarrollar una herramienta de evaluación automática de accesibilidad surge cuando estaba buscando temas en los que centrarme para realizar la tesis de grado en la universidad. Para ese momento estaba aprendiendo desarrollo web de forma autodidacta y note que muchas veces se omitía el tema de la accesibilidad o se tocaba de forma muy pobre y general, por lo que decidí centrar mi tesis en esta temática. De esta manera, comencé a investigar sobre herramientas de evaluación automática de accesibilidad y note que si era factible realizar un prototipo, por lo que centre mi tesis en el desarrollo del mismo. Esta primera versión estaba centrada en discapacidades visuales y las interfaces gráficas fueron desarrolladas utilizando una librería llamada EJS la cual permite insertar código JavaScript en HTML. Posteriormente, para consolidar los conocimientos que adquirí tanto de React como de desarrollo web en general decidí realizar esta segunda versión, mejorando la calidad del prototipo inicial."
+		},
+		"development": {
+			"title": "Proceso de desarrollo",
+			"f_desc": "El primer paso para desarrollar este proyecto fue analizar y filtrar las técnicas propuestas por la WCAG relacionadas a HTML y que pudieran ser aplicadas con la librería Cheerio. Posteriormente, comencé a desarrollar el backend, conformado por un servidor que dispone de una api REST con una ruta para evaluar por URL y otra para evaluar código HTML directamente, ademas de cada una de las funciones que representan las técnicas de la WCAG seleccionadas. También es importante resaltar que realice pruebas unitarias a cada una de las funciones que representan una técnica, ademas de pruebas de integración a cada una de las rutas de la api.",
+			"s_desc": "En cuanto al frontend, comencé realizando un diseño preliminar en Figma, seleccionando la paleta de colores y los estilos y tamaños de la fuente que utilice como guía para desarrollar la interfaz de usuario con React y SASS. De esta manera, las primeras pantallas desarrolladas fueron la homepage y la pagina para seleccionar el tipo de evaluación de accesibilidad. Posteriormente, desarrolle la pantalla de resultados, ademas de los hooks y el context encargados de manejar el estado de la petición a la api. Finalmente, desarrolle la pantalla de evaluación de contraste ademas de los hooks necesarios para controlar su estado."
+		},
+		"challenges": {
+			"title": "Desafíos durante el desarrollo",
+			"desc": "En cuanto al backend, el principal reto que encontré estaba relacionado a como realizar las funciones para aplicar cada técnica de la WCAG con la librería Cheerio de la forma mas eficiente posible para asi evitar que los tiempos de respuesta de la api fueran muy extensos. Por otro lado, Uno de los aspectos que mas me costo durante el desarrollo del frontend fue decidir como estructurar algunos componentes para evitar los problemas de re-renderizado que pueden surgir al usar la api Context de React para manejar el estado. Finalmente, también fue un reto el decidir cuando era correcto abstraer un componente con el fin de reutilizar su funcionamiento o sus estilos."
+		},
+		"learning": {
+			"title": "Aprendizaje",
+			"f_desc": "Durante el desarrollo del proyecto aprendí muchas practicas importantes. Por ejemplo, que siempre va a ser mejor tener código simple, por lo que no hay que obsesionarse con la eficiencia en etapas tempranas del proyecto y solo se deben abstraer funciones, módulos o componentes cuando se note que el código se ha repetido al menos tres veces, ya que si se realiza lo contrario a estas practicas, se tiende a aplicar sobreingenieria y a escribir código mas complejo del necesario.",
+			"s_desc": "Ademas, aprendí a realizar pruebas unitarias y de integración, asi como comprender de mejor forma el funcionamiento de la api Context y del renderizado en React. Finalmente, aprendí la importancia de escribir código HTML mas semántico, aunado a otros aspectos relacionados a la accesibilidad web."
+		},
+		"projects": {
+			"title": "Otros proyectos"
+		}
 	}
 }
