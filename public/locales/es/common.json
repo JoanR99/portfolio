@@ -26,5 +26,34 @@
 		"&": "y",
 		"second_p": ", además de aprender otras tecnologías, frameworks y librerías con recursos gratuitos como es el caso de Youtube o de la propia documentación de dichas tecnologías.",
 		"second_t": "Principales tecnologías"
+	},
+	"projects": {
+		"title": "Proyectos",
+		"action": "Ver proyecto",
+		"web_access": {
+			"desc": "Herramienta de evaluación automática de accesibilidad web y evaluador de contraste."
+		},
+		"sticky_notes": {
+			"desc": "Aplicación de notas con internacionalización."
+		},
+		"coroshop": {
+			"desc": "E-commerce con pagos en Stripe o PayPal."
+		}
+	},
+	"contact": {
+		"title": "Contáctame",
+		"form": {
+			"f_name": "Nombre",
+			"s_name": "Apellido",
+			"email": "Dirección email",
+			"message": "Mensaje",
+			"send": "Enviar",
+			"success": "Mensaje enviado!",
+			"fail": "No se pudo enviar el mensaje!"
+		}
+	},
+	"footer": {
+		"copy": "Copyright por Joan Romero 2022",
+		"rights": "Todos los derechos reservados"
 	}
 }

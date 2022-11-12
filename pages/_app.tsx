@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { appWithTranslation } from 'next-i18next';
+import Footer from '../components/Footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
@@ -11,6 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 			<ToastContainer />
 			<Header />
 			<Component {...pageProps} />
+			<Footer />
 		</>
 	);
 }

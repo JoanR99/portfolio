@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 import {
 	SiExpress,
 	SiJest,
@@ -13,6 +14,8 @@ import BlurImage from './BlurImage';
 import ProjectCard from './ProjectCard';
 
 const StickyNotesCard = () => {
+	const { t } = useTranslation('');
+
 	return (
 		<ProjectCard>
 			<BlurImage src="/images/sticky-notes.png" alt="Sticky  Notes" />
@@ -20,7 +23,7 @@ const StickyNotesCard = () => {
 			<div className="flex flex-col items-center justify-between p-4 md:items-start">
 				<h3 className="text-md font-medium text-teal-700">Sticky Notes</h3>
 				<p className="mt-2 text-center text-sm md:text-left">
-					Aplicación de notas con internacionalización.
+					{t('projects.sticky_notes.desc')}
 				</p>
 				<div className="mt-4 flex">
 					<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
@@ -34,7 +37,7 @@ const StickyNotesCard = () => {
 				</div>
 				<Link href="/projects/sticky-notes">
 					<p className="mt-4 cursor-pointer text-sm font-medium text-pink-700">
-						Ver Proyecto
+						{t('projects.action')}
 					</p>
 				</Link>
 			</div>

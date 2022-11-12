@@ -24,7 +24,7 @@ const Skills = () => {
 	const { t } = useTranslation('');
 
 	return (
-		<div id="skills" className="mt-8 min-h-screen scroll-mt-24">
+		<div id="skills" className="my-24 min-h-fit scroll-mt-24">
 			<h3 className="text-xl font-bold text-teal-600 sm:text-2xl md:text-3xl lg:text-4xl">
 				{t('skills.title')}
 			</h3>

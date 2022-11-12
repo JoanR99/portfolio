@@ -1,3 +1,4 @@
+import { useTranslation } from 'next-i18next';
 import Link from 'next/link';
 import {
 	SiExpress,
@@ -11,6 +12,8 @@ import BlurImage from './BlurImage';
 import ProjectCard from './ProjectCard';
 
 const WebAccessCard = () => {
+	const { t } = useTranslation('');
+
 	return (
 		<ProjectCard>
 			<BlurImage src="/images/web-access.png" alt="WebAcess" />
@@ -18,8 +21,7 @@ const WebAccessCard = () => {
 			<div className="flex flex-col items-center justify-between p-4 md:items-start">
 				<h3 className="text-md font-medium text-teal-700">WebAccess</h3>
 				<p className="mt-2 text-center text-sm md:text-left">
-					Herramienta de evaluación automática de accesibilidad web y evaluador
-					de contraste.
+					{t('projects.web_access.desc')}
 				</p>
 				<div className="mt-4 flex">
 					<SiJavascript className='sm:w-8" mr-4 h-6 w-6 text-yellow-400 sm:h-8' />
@@ -31,7 +33,7 @@ const WebAccessCard = () => {
 				</div>
 				<Link href="/projects/web-access">
 					<p className="mt-4 cursor-pointer text-sm font-medium text-pink-700">
-						Ver Proyecto
+						{t('projects.action')}
 					</p>
 				</Link>
 			</div>

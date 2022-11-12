@@ -1,8 +1,10 @@
 import { FormEvent, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast } from 'react-toastify';
+import { useTranslation } from 'next-i18next';
 
 const FormContact = () => {
+	const { t } = useTranslation('');
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 	const [email, setEmail] = useState('');
@@ -24,14 +26,14 @@ const FormContact = () => {
 					setLastName('');
 					setEmail('');
 					setMessage('');
-					toast.success('Message sent successfully!', {
+					toast.success(t('contact.form.success') as string, {
 						autoClose: 2000,
 						hideProgressBar: true,
 						closeButton: true,
 					});
 				},
 				(error) => {
-					toast.error('Can not sent message!', {
+					toast.error(t('contact.form.fail') as string, {
 						autoClose: 2000,
 						hideProgressBar: true,
 						closeButton: true,
@@ -48,7 +50,7 @@ const FormContact = () => {
 			<div className="flex flex-col gap-4 sm:flex-row sm:gap-2">
 				<div className="flex w-full flex-col gap-1 sm:w-1/2">
 					<label htmlFor="firstName" className="bold ">
-						First Name
+						{t('contact.form.f_name')}
 					</label>
 					<input
 						value={firstName}
@@ -62,7 +64,7 @@ const FormContact = () => {
 
 				<div className="flex w-full flex-col gap-1 sm:w-1/2">
 					<label htmlFor="lastName" className="bold ">
-						Last Name
+						{t('contact.form.s_name')}
 					</label>
 					<input
 						value={lastName}
@@ -77,7 +79,7 @@ const FormContact = () => {
 
 			<div className="flex flex-col gap-1">
 				<label htmlFor="email" className="bold ">
-					Email Address
+					{t('contact.form.email')}
 				</label>
 				<input
 					value={email}
@@ -91,7 +93,7 @@ const FormContact = () => {
 
 			<div className="flex flex-col gap-1">
 				<label htmlFor="message" className="bold ">
-					Message
+					{t('contact.form.message')}
 				</label>
 				<textarea
 					value={message}
@@ -104,7 +106,7 @@ const FormContact = () => {
 			</div>
 
 			<button className="rounded-xl border border-solid border-pink-700 bg-pink-700 p-2 font-medium text-white">
-				Send
+				{t('contact.form.send')}
 			</button>
 		</form>
 	);

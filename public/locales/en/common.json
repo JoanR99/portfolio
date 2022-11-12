@@ -26,5 +26,34 @@
 		"&": "and",
 		"second_p": ", in addition to learning other technologies, frameworks and libraries with free resources such as YouTube or the documentation of said technologies.",
 		"second_t": "Main technologies"
+	},
+	"projects": {
+		"title": "Projects",
+		"action": "View project",
+		"web_access": {
+			"desc": "Automatic web accessibility assessment tool and contrast checker"
+		},
+		"sticky_notes": {
+			"desc": "Notes app with internationalization."
+		},
+		"coroshop": {
+			"desc": "E-commerce with Stripe or PayPal payments."
+		}
+	},
+	"contact": {
+		"title": "Contact me",
+		"form": {
+			"f_name": "First name",
+			"s_name": "Last name",
+			"email": "Email address",
+			"message": "Message",
+			"send": "Send",
+			"success": "Message sent successfully!",
+			"fail": "Can not sent message!"
+		}
+	},
+	"footer": {
+		"copy": "Copyright by Joan Romero 2022",
+		"rights": "All rights reserved"
 	}
 }
