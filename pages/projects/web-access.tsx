@@ -50,7 +50,7 @@ const Home: NextPage = () => {
 							Frontend
 						</GithubButton>
 						<VisitButton href="https://web-access.vercel.app/">
-							{t('web_access.visit')}
+							{t('visit')}
 						</VisitButton>
 					</div>
 
@@ -94,7 +94,7 @@ const Home: NextPage = () => {
 
 						<div className="mt-8 h-fit">
 							<h4 className="text-xl font-bold text-teal-700">
-								{t('web_access.origin.title')}
+								{t('projects.titles.origin')}
 							</h4>
 							<p className="text-md mt-4">{t('web_access.origin.desc')}</p>
 						</div>
@@ -113,7 +113,7 @@ const Home: NextPage = () => {
 
 						<div className="my-8 h-fit lg:col-span-2 lg:mb-4">
 							<h4 className="text-xl font-bold text-teal-700">
-								{t('web_access.development.title')}
+								{t('projects.titles.development')}
 							</h4>
 							<p className="text-md mt-4">
 								{t('web_access.development.f_desc')}
@@ -137,7 +137,7 @@ const Home: NextPage = () => {
 					<div className="my-8 lg:mt-10">
 						<div className="h-fit lg:col-span-2">
 							<h4 className="text-xl font-bold text-teal-700">
-								{t('web_access.challenges.title')}
+								{t('projects.titles.challenges')}
 							</h4>
 							<p className="text-md mt-4">{t('web_access.challenges.desc')}</p>
 						</div>
@@ -157,7 +157,7 @@ const Home: NextPage = () => {
 						<div className="mt-8 flex h-fit flex-col">
 							<div>
 								<h4 className="text-xl font-bold text-teal-700">
-									{t('web_access.learning.title')}
+									{t('projects.titles..learning')}
 								</h4>
 								<p className="text-md mt-4">
 									{t('web_access.learning.f_desc')}
@@ -172,7 +172,7 @@ const Home: NextPage = () => {
 				</div>
 				<div className=" mt-24">
 					<h4 className="text-xl font-bold text-teal-700">
-						{t('web_access.projects.title')}
+						{t('projects.other')}
 					</h4>
 					<div className="mt-8 grid w-full grid-cols-1 gap-6 md:gap-8">
 						<StickyNotesCard />

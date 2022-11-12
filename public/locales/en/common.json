@@ -38,7 +38,14 @@
 		},
 		"coroshop": {
 			"desc": "E-commerce with Stripe or PayPal payments."
-		}
+		},
+		"titles": {
+			"origin": "Idea origin",
+			"development": "Development process",
+			"challenges": "Challenges during development",
+			"learning": "Learning"
+		},
+		"other": "Another projects"
 	},
 	"contact": {
 		"title": "Contact me",
@@ -56,32 +63,72 @@
 		"copy": "Copyright by Joan Romero 2022",
 		"rights": "All rights reserved"
 	},
+	"visit": "View",
 	"web_access": {
 		"desc": "WebAccess is a website that has two tools to help web developers create more accessible content. The first tool is an automatic web accessibility evaluator, which allows evaluating HTML code by inserting the URL of a web page or the HTML code itself, applying up to 13 techniques proposed by the WCAG in its version 2.1. On the other hand, the second tool is a contrast evaluator, which allows knowing if the contrast ratio between two colors (text and background) meets any of the levels established by the WCAG.",
-		"visit": "View",
 		"stack": {
 			"desc": "On the frontend side, I used React as the base framework, managing the state of the application with hooks and with Jotai due to its simplicity to control the state, avoiding unnecessary rerendering and using SASS for the styles. The backend, on the other hand, is made up of an Express server, using a library called Cheerio to analyze HTML code and perform the evaluation, which has a simple api to manipulate the DOM of an HTML document."
 		},
 		"origin": {
-			"title": "Idea origin",
 			"desc": "The idea of ​​developing an automatic accessibility evaluation tool arose when I was looking for topics to focus on for my thesis at university. At that time I was learning web development in a self-taught way and I noticed that many times the subject of accessibility was omitted or was dealt with in a very poor and general way, so I decided to focus my thesis on this topic. In this way, I began to investigate automatic accessibility evaluation tools and noticed that it was feasible to make a prototype, so I focused my thesis on its development. This first version was focused on visual disabilities and the graphical interfaces were developed using a library called EJS which allows inserting JavaScript code into HTML. Later, to consolidate the knowledge I acquired of both React and web development in general, I decided to make this second version, improving the quality of the initial prototype."
 		},
 		"development": {
-			"title": "Development process",
 			"f_desc": "The first step to develop this project was to analyze and filter the techniques proposed by the WCAG related to HTML and that could be applied with the Cheerio library. Subsequently, I began to develop the backend, made up of a server that has a REST api with a route to evaluate by URL and another to evaluate HTML code directly, in addition to each of the functions that represent the selected WCAG techniques. It is also important to highlight that you perform unit tests on each of the functions that represent a technique, in addition to integration tests on each of the api routes.",
 			"s_desc": "As for the frontend, I started by making a preliminary design in Figma, selecting the color palette and the font styles and sizes that I use as a guide to develop the user interface with React and SASS. In this way, the first screens developed were the homepage and the page to select the type of accessibility evaluation. Later, I developed the results screen, in addition to the hooks and the context in charge of handling the status of the request to the api. Finally, develop the contrast evaluation screen as well as the necessary hooks to control its state."
 		},
 		"challenges": {
-			"title": "Challenges during development",
 			"desc": "Regarding the backend, the main challenge I found was related to how to perform the functions to apply each WCAG technique with the Cheerio library in the most efficient way possible to avoid long API response times. On the other hand, One of the aspects that cost me the most during the development of the frontend was deciding how to structure some components to avoid re-rendering problems that can arise when using React's Context api to handle state. Finally, it was also a challenge to decide when it was correct to abstract a component in order to reuse its behavior or its styles."
 		},
 		"learning": {
-			"title": "Learning",
 			"f_desc": "During the development of the project I learned many important practices. For example, that it will always be better to have simple code, so you should not be obsessed with efficiency in the early stages of the project and you should only abstract functions, modules or components when you notice that the code has been repeated at least three times. Sometimes, since if the opposite of these practices is carried out, there is a tendency to apply over-engineering and write more complex code than necessary.",
 			"s_desc": "In addition, I learned to perform unit and integration tests, as well as to better understand the operation of the Context api and rendering in React. Finally, I learned the importance of writing more semantic HTML code, along with other aspects related to web accessibility."
+		}
+	},
+	"sticky_notes": {
+		"desc": "Sticky Notes is a note app that has the basic functions of creating, editing, archiving, and deleting notes. In addition, it allows you to assign a color to the notes to categorize and filter them, together with the ability to search both by title and body of the note. Finally, the application has a basic JWT-based authentication system, and internationalization (English and Spanish).",
+		"stack": {
+			"f_desc": "The entire application was written in TypeScript, due to the advantages of having strongly typed code, such as error prevention during development. On the frontend side, I used React as the base framework, mainly using React-Query to manage the state of the application, since this library facilitates the coordination and synchronization of the state or cache of the server, which makes up most of the state of the application. application, plus hooks and Jotai to handle the remaining state. For styles, use the Material UI library, because it provides customizable basic components that make it easy to create an attractive and professional user interface in less time.",
+			"s_desc": "The backend, on the other hand, is made up of an Express server, due to its ease and flexibility to create a REST api, in addition to PostgreSQL as a database, since it is one of the most robust relational databases with the greatest support. regarding its deployment. Finally, use Prisma as your ORM, as it offers a powerful CLI and works with TypesCript by default, making it easy to create services with good type safety."
 		},
-		"projects": {
-			"title": "Another projects"
+		"origin": {
+			"desc": "The idea of ​​developing Sticky Notes arises to take advantage of a much more basic notes application that I had made as part of a technical test in order to practice and consolidate the knowledge I had acquired of technologies such as TypeScript, React-Query or Prisma. The original app was written in JavaScript, using Sequelize as the ORM and Bootstrap to style the UI. Also, it is important to note that the original application did not have an authentication system either."
+		},
+		"development": {
+			"f_desc": "To develop the first version I started by designing the database by defining the table of notes, while it was not necessary to make a preliminary design for the user interface because the one in the technical test was already defined.",
+			"s_desc": "Later, to start with the second version, I started by migrating the backend code to TypeScript and then redile the database to add the necessary tables for the authentication functions and sort by color. The last steps regarding the backend were migrating from Sequelize to Prisma as ORM and adding or modifying the drivers and services needed to implement the new features.",
+			"t_desc": "In the case of the frontend I started by migrating the code to TypeScript and changing some components to migrate from Bootstrap to Material UI for styles and interactive components like modal windows. Finally, modify and add some components to implement authentication, color filtering, and search functions, as well as adding internationalization."
+		},
+		"challenges": {
+			"f_desc": "One of the biggest challenges in terms of the application in general was typing with TypeScript in terms of third-party library utilities.",
+			"s_desc": "Regarding the backend, what was most complicated for me was configuring Jest to work with TypeScript, in addition to configuring Prisma to use a test database when performing the integration and End to End tests.",
+			"t_desc": "For its part, the biggest challenge in the frontend was to apply the token refresh system in terms of authentication with React-Query, since a new request must be sent to the server to obtain a new access token each time a request is made. It will be done with an expired access token, in addition to configuring React-Query and structuring the app to prevent this library from making several repeated requests to the api for component rerendering."
+		},
+		"learning": {
+			"f_desc": "During the development of the project I learned many important concepts, such as applying an authentication system with refresh and access tokens, in addition to better understanding the difference between the state of the application and the state or cache of the server and how the latter can be more easily managed and synchronized with libraries specialized in this aspect, such as React-Query.",
+			"s_desc": "Finally, I improved my ability to configure and synchronize third-party library utilities and learned how to implement internationalization, in addition to all the experience I gained with TypeScript."
+		}
+	},
+	"coroshop": {
+		"desc": "Coroshop is an electronic device e-commerce that has administrator options to add, edit or delete products, in addition to allowing users to make reviews and pay through PayPal or Stripe.",
+		"stack": {
+			"f_desc": "The application was developed entirely with TypeScript, which allowed to avoid runtime errors, using React as the base framework for the frontend and managing the state with Redux Toolkit, this being a perfect library for the use case because it facilitates managing the state. client state consisting mainly of the shopping cart and the user session, in addition to managing the server state or cache with its optional RTK Query plugin. On the other hand, for the styles use Styled Components, because it facilitates the creation of ui components and because it does not require any type of special configuration.",
+			"s_desc": "On the other hand, the backend is made up of a server in Nest, because it works by default with TypeScript, it allows creating more scalable, testable and maintainable apis because it is a dogmatic framework that promotes a structure with a good separation of responsibilities and because it facilitates the creation of apis in GraphQL, which was the type of api used in this project because the requests are managed in a single run and because it is composed of a typed query language that complements very well with TypeScript and generates the api documentation automatically. Finally, use MongoDB as your database because of its flexibility in defining models and because it's perfect for handling large amounts of data as it scales more cheaply than a relational database."
+		},
+		"origin": {
+			"desc": "Coroshop arises with the purpose of developing a more complex application both in the backend and in the frontend, which would allow me to practice and consolidate knowledge in the latest libraries or technologies that I was learning, such as Nest, GraphQL or Redux Toolkit with RTK Query. In addition, I also wanted to develop an application in which to apply a role-based authorization system, in this case the administrator role."
+		},
+		"development": {
+			"f_desc": "The first version of the backend was made up of a server with Express and Apollo Server which would later be migrated to Nest, because I considered that in this way I would obtain a greater understanding of the two frameworks and acquire the experience of doing a complete framework migration.",
+			"s_desc": "In this way, the first phase of the project consisted of configuring Apollo Server with Express, defining the models for MongoDB and defining the resolvers that would be in charge of converting GraphQL operations such as queries and mutations into data, to later migrate to Nest by having the backend base ready.",
+			"t_desc": "In the case of the frontend, I started by defining the route structure that the application would have, to later carry out the setup of React-Router, Redux and RTK Query with GraphQL Client. After having the setup ready, I started to develop the pages and basic components with Styled Components, integrating the Hooks generated by RTK Query to connect the frontend with the backend."
+		},
+		"challenges": {
+			"f_desc": "In the backend, the biggest challenge was to define how and where to implement the authentication and authorization logic, since Nest has different levels in which to place this type of logic, such as middleware, interceptors or guards. In this sense, I ended up implementing a middleware that would be in charge of validating the user's access token to append its information in the request of the request if it is valid, to later leave the work of authorization and permissions to the guards.",
+			"s_desc": "For its part, the biggest challenge in the frontend was configuring RTK Query to work with Apollo Client, since in the basic utility the base query could not be configured to include credentials, so I had to improvise and create a new GraphQL client. configured to include credentials and then pass it to the base query."
+		},
+		"learning": {
+			"f_desc": "The development of this project helped me to increase my understanding of TypeScript, especially of the decorators, since these are quite used in Nest. In addition, it also increased my understanding of dependency injection and how it eases the process of testing each module.",
+			"s_desc": "Finally, I learned a new and better way to organize the folders and files of a project, consisting of grouping the files by provision or feature, which allows having the closest dependencies of each module."
 		}
 	}
 }
