@@ -59,7 +59,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="mt-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2">
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-2">
 							<Image
 								src="/images/coroshop-frame.png"
 								alt="Coroshop"
@@ -90,7 +90,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="my-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400">
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700">
 							<Image
 								src="/images/cs-2.png"
 								alt="Coroshop - Login"
@@ -109,7 +109,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="my-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2 lg:mt-6">
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-2 lg:mt-6">
 							<Image
 								src="/images/cs-3.png"
 								alt="Coroshop - All Products"
@@ -128,7 +128,7 @@ const Home: NextPage = () => {
 							<p className="text-md mt-2">{t('coroshop.development.t_desc')}</p>
 						</div>
 
-						<ImageContainer className="m-2 mt-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-3 lg:mt-6">
+						<ImageContainer className="m-2 mt-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-3 lg:mt-6">
 							<Image
 								src="/images/cs-4.png"
 								alt="Coroshop - Categories"
@@ -150,7 +150,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="my-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2">
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-2">
 							<Image
 								src="/images/cs-5.png"
 								alt="Coroshop - Product"

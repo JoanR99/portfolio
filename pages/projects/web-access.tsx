@@ -55,7 +55,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="mt-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2">
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-2">
 							<Image
 								src="/images/web-access-frame.png"
 								alt="WebAccess"
@@ -82,7 +82,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="my-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400">
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700">
 							<Image
 								src="/images/wa-2.png"
 								alt="WebAccess - Section"
@@ -101,7 +101,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="my-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2 lg:mt-6">
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-2 lg:mt-6">
 							<Image
 								src="/images/wa-3.png"
 								alt="WebAccess - Accessibility evaluation"
@@ -123,7 +123,7 @@ const Home: NextPage = () => {
 							</p>
 						</div>
 
-						<ImageContainer className="m-2 mt-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-3 lg:mt-6">
+						<ImageContainer className="m-2 mt-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-3 lg:mt-6">
 							<Image
 								src="/images/wa-4.png"
 								alt="WebAccess - Results"
@@ -144,7 +144,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="my-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2">
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-2">
 							<Image
 								src="/images/wa-5.png"
 								alt="WebAccess - Contrast checker"
@@ -157,7 +157,7 @@ const Home: NextPage = () => {
 						<div className="mt-8 flex h-fit flex-col">
 							<div>
 								<h4 className="text-xl font-bold text-teal-700">
-									{t('projects.titles..learning')}
+									{t('projects.titles.learning')}
 								</h4>
 								<p className="text-md mt-4">
 									{t('web_access.learning.f_desc')}

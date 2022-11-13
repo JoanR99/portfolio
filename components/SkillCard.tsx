@@ -5,7 +5,7 @@ type Props = {
 };
 
 const SkillCard = ({ children }: Props) => (
-	<div className="flex h-12 items-center rounded-xl border border-solid p-2 shadow-xl duration-300 ease-in hover:scale-105 sm:h-12">
+	<div className="flex h-12 items-center rounded-xl border p-2 shadow-lg shadow-gray-400 duration-300 ease-in hover:scale-105 dark:border-[#1E293B]  dark:shadow-teal-700 sm:h-12">
 		{children}
 	</div>
 );

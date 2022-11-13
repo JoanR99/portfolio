@@ -25,7 +25,7 @@ const StickyNotesCard = () => {
 				<p className="mt-2 text-center text-sm md:text-left">
 					{t('projects.sticky_notes.desc')}
 				</p>
-				<div className="mt-4 flex">
+				<div className="mt-4 flex flex-wrap">
 					<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 					<SiReact className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 					<SiMaterialui className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />

@@ -1,19 +1,23 @@
 import Link from 'next/link';
-import { useState, MouseEvent, MouseEventHandler } from 'react';
+import { useState, useEffect } from 'react';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
+import { MdLanguage } from 'react-icons/md';
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
+import { useTheme } from 'next-themes';
+import { FaSun, FaMoon } from 'react-icons/fa';
+import LangButton from './LangButton';
+import ThemeButton from './ThemeButton';
+import NavItems from './NavItems';
+import SidebarNavItems from './SidebarNavItems';
 
 const Header = () => {
 	const [nav, setNav] = useState(false);
+
 	const router = useRouter();
 	const { t } = useTranslation('');
-
-	const { locales, locale: activeLocale } = router;
-
-	const otherLocales = locales?.filter((locale) => locale !== activeLocale);
 
 	const handleNav = () => setNav((prevState) => !prevState);
 
@@ -31,7 +35,7 @@ const Header = () => {
 	};
 
 	return (
-		<header className="w fixed top-0 z-[100] h-16 w-full bg-[#ecf0f3] text-teal-700 shadow-lg md:shadow-lg">
+		<header className="w fixed top-0 z-[100] h-16 w-full bg-[#ecf0f3] text-teal-700 shadow-lg dark:bg-[#1E293B] md:shadow-lg">
 			<section className="flex h-full w-full items-center justify-between px-2 2xl:px-16">
 				<motion.h1
 					initial={{
@@ -57,131 +61,37 @@ const Header = () => {
 				</motion.h1>
 
 				<div>
-					<span className="text-muted cursor-pointer">
-						{otherLocales?.map((locale) => {
-							const { pathname, query, asPath } = router;
-							return (
-								<span key={'locale-' + locale}>
-									<Link href={{ pathname, query }} as={asPath} locale={locale}>
-										<a>
-											{locale === 'en'
-												? 'English'
-												: locale === 'es'
-												? 'Español'
-												: null}
-										</a>
-									</Link>
-								</span>
-							);
-						})}
-					</span>
+					<motion.nav
+						initial={{
+							y: -500,
+							opacity: 0,
+							scale: 0.5,
+						}}
+						animate={{
+							y: 0,
+							opacity: 1,
+							scale: 1,
+						}}
+						transition={{
+							duration: 1.5,
+						}}
+						className="hidden space-x-8 text-lg font-medium md:flex"
+						aria-label="main"
+					>
+						<NavItems />
+					</motion.nav>
+
+					<div onClick={handleNav} className="cursor-pointer md:hidden">
+						<AiOutlineMenu size={25} />
+					</div>
 				</div>
 
-				{!router.pathname.includes('/projects') ? (
-					<div>
-						<motion.nav
-							initial={{
-								y: -500,
-								opacity: 0,
-								scale: 0.5,
-							}}
-							animate={{
-								y: 0,
-								opacity: 1,
-								scale: 1,
-							}}
-							transition={{
-								duration: 1.5,
-							}}
-							className="hidden space-x-8 text-lg font-medium md:flex"
-							aria-label="main"
-						>
-							<a
-								href="#about"
-								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
-							>
-								{t('header.about')}
-							</a>
-
-							<a
-								href="#skills"
-								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
-							>
-								{t('header.skills')}
-							</a>
-
-							<a
-								href="#projects"
-								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
-							>
-								{t('header.projects')}
-							</a>
-
-							<a
-								href="#contact"
-								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
-							>
-								{t('header.contact')}
-							</a>
-						</motion.nav>
-
-						<div onClick={handleNav} className="cursor-pointer md:hidden">
-							<AiOutlineMenu size={25} />
-						</div>
+				<div className="hidden md:block">
+					<div className="flex items-center gap-5">
+						<LangButton />
+						<ThemeButton />
 					</div>
-				) : (
-					<div>
-						<motion.nav
-							initial={{
-								y: -500,
-								opacity: 0,
-								scale: 0.5,
-							}}
-							animate={{
-								y: 0,
-								opacity: 1,
-								scale: 1,
-							}}
-							transition={{
-								duration: 1.5,
-							}}
-							className="hidden space-x-8 text-lg font-medium md:flex"
-							aria-label="main"
-						>
-							<Link
-								href="/#about"
-								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
-							>
-								{t('header.about')}
-							</Link>
-
-							<Link
-								href="/#skills"
-								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
-							>
-								{t('header.skills')}
-							</Link>
-
-							<Link
-								href="/#projects"
-								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
-							>
-								{t('header.projects')}
-							</Link>
-
-							<Link
-								href="/#contact"
-								className="ml-10 cursor-pointer hover:border-b hover:opacity-90"
-							>
-								{t('header.contact')}
-							</Link>
-						</motion.nav>
-
-						<div onClick={handleNav} className="cursor-pointer md:hidden">
-							<AiOutlineMenu size={25} />
-						</div>
-					</div>
-				)}
+				</div>
 			</section>
 
 			<div
@@ -194,71 +104,32 @@ const Header = () => {
 					animate={nav ? 'open' : 'closed'}
 					variants={menu}
 					className={
-						'fixed left-0 top-0 h-screen w-[75%] bg-[#ecf0f3] p-10  sm:w-[60%] md:w-[45%]'
+						'fixed left-0 top-0 flex h-screen w-[75%] flex-col justify-between bg-[#ecf0f3] p-4 dark:bg-[#1E293B]  sm:w-[60%] md:w-[45%] md:p-10'
 					}
 				>
-					<div>
-						<div className="flex w-full items-center justify-between">
-							<h1
-								className="text-2xl font-bold sm:text-3xl md:text-4xl"
-								onClick={handleNav}
-							>
-								<a href="#hero">JR</a>
-							</h1>
-							<div
-								onClick={handleNav}
-								className="cursor-pointer p-3 text-pink-700"
-							>
-								<AiOutlineClose size={25} />
-							</div>
+					<div className="flex w-full items-center justify-between">
+						<h1
+							className="text-2xl font-bold sm:text-3xl md:text-4xl"
+							onClick={handleNav}
+						>
+							<a href="#hero">JR</a>
+						</h1>
+
+						<div className="flex items-center gap-4">
+							<LangButton />
+							<ThemeButton />
+						</div>
+
+						<div onClick={handleNav} className="cursor-pointer text-pink-700">
+							<AiOutlineClose size={25} />
 						</div>
 					</div>
+
 					<div className="flex flex-col p-4 text-xl">
-						{!router.pathname.includes('/projects') ? (
-							<nav onClick={handleNav} className="flex flex-col p-4 text-xl">
-								<a href="#about" className="py-4 hover:opacity-90">
-									{t('header.about')}
-								</a>
+						<nav onClick={handleNav} className="flex flex-col p-4 text-xl">
+							<SidebarNavItems />
+						</nav>
 
-								<a href="#skills" className="py-4 hover:opacity-90">
-									{t('header.skills')}
-								</a>
-
-								<a href="#projects" className="py-4 hover:opacity-90">
-									{t('header.projects')}
-								</a>
-
-								<a href="#contact" className="py-4 hover:opacity-90">
-									{t('header.contact')}
-								</a>
-							</nav>
-						) : (
-							<nav onClick={handleNav} className="flex flex-col p-4 text-xl">
-								<Link href="/#about">
-									<p className="cursor-pointer py-4 hover:opacity-90">
-										{t('header.about')}
-									</p>
-								</Link>
-
-								<Link href="/#skills">
-									<p className="cursor-pointer py-4 hover:opacity-90">
-										{t('header.skills')}
-									</p>
-								</Link>
-
-								<Link href="?#projects">
-									<p className="cursor-pointer py-4 hover:opacity-90">
-										{t('header.projects')}
-									</p>
-								</Link>
-
-								<Link href="/#contact">
-									<p className="cursor-pointer py-4 hover:opacity-90">
-										{t('header.contact')}
-									</p>
-								</Link>
-							</nav>
-						)}
 						<div className="pt-40">
 							<p className="font-medium">{t('header.connect')}</p>
 							<div className="mt-2 flex w-[30%] items-center">

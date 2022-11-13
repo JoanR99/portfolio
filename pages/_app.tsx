@@ -5,14 +5,17 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { appWithTranslation } from 'next-i18next';
 import Footer from '../components/Footer';
+import { ThemeProvider } from 'next-themes';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<>
-			<ToastContainer />
-			<Header />
-			<Component {...pageProps} />
-			<Footer />
+			<ThemeProvider enableSystem={true} attribute="class">
+				<ToastContainer />
+				<Header />
+				<Component {...pageProps} />
+				<Footer />
+			</ThemeProvider>
 		</>
 	);
 }

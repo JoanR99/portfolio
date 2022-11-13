@@ -1,7 +1,10 @@
 import { FormEvent, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import { toast } from 'react-toastify';
+import { Theme, toast } from 'react-toastify';
 import { useTranslation } from 'next-i18next';
+import Input from './Input';
+import Textarea from './Textarea';
+import { useTheme } from 'next-themes';
 
 const FormContact = () => {
 	const { t } = useTranslation('');
@@ -9,9 +12,15 @@ const FormContact = () => {
 	const [lastName, setLastName] = useState('');
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
+	const { systemTheme, theme } = useTheme();
+	const [loading, setLoading] = useState(false);
+
+	const currentTheme = theme === 'system' ? systemTheme : theme;
 
 	const submitHandler = (e: FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
+
+		setLoading(true);
 
 		emailjs
 			.sendForm(
@@ -30,14 +39,18 @@ const FormContact = () => {
 						autoClose: 2000,
 						hideProgressBar: true,
 						closeButton: true,
+						theme: currentTheme as Theme,
 					});
+					setLoading(false);
 				},
 				(error) => {
 					toast.error(t('contact.form.fail') as string, {
 						autoClose: 2000,
 						hideProgressBar: true,
 						closeButton: true,
+						theme: currentTheme as Theme,
 					});
+					setLoading(false);
 				}
 			);
 	};
@@ -45,20 +58,19 @@ const FormContact = () => {
 	return (
 		<form
 			onSubmit={submitHandler}
-			className="mt-8 flex flex-col justify-between gap-4 rounded-xl p-4 shadow-xl shadow-gray-400 md:w-3/6"
+			className="mt-8 flex flex-col justify-between gap-4 rounded-xl border p-4 shadow-xl shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700  md:w-3/6"
 		>
 			<div className="flex flex-col gap-4 sm:flex-row sm:gap-2">
 				<div className="flex w-full flex-col gap-1 sm:w-1/2">
 					<label htmlFor="firstName" className="bold ">
 						{t('contact.form.f_name')}
 					</label>
-					<input
+					<Input
 						value={firstName}
 						onChange={(e) => setFirstName(e.target.value)}
 						type="text"
 						name="firstName"
 						id="firstName"
-						className="rounded-xl border border-solid border-gray-400 bg-gray-200 p-1 indent-2"
 					/>
 				</div>
 
@@ -66,13 +78,12 @@ const FormContact = () => {
 					<label htmlFor="lastName" className="bold ">
 						{t('contact.form.s_name')}
 					</label>
-					<input
+					<Input
 						value={lastName}
 						onChange={(e) => setLastName(e.target.value)}
 						type="text"
 						name="lastName"
 						id="lastName"
-						className="rounded-xl border border-solid border-gray-400 bg-gray-200 p-1 indent-2"
 					/>
 				</div>
 			</div>
@@ -81,13 +92,12 @@ const FormContact = () => {
 				<label htmlFor="email" className="bold ">
 					{t('contact.form.email')}
 				</label>
-				<input
+				<Input
 					value={email}
 					onChange={(e) => setEmail(e.target.value)}
 					type="email"
 					name="email"
 					id="email"
-					className="rounded-xl border border-solid border-gray-400 bg-gray-200 p-1 indent-2"
 				/>
 			</div>
 
@@ -95,18 +105,19 @@ const FormContact = () => {
 				<label htmlFor="message" className="bold ">
 					{t('contact.form.message')}
 				</label>
-				<textarea
+				<Textarea
 					value={message}
 					onChange={(e) => setMessage(e.target.value)}
 					name="message"
 					id="message"
-					className="resize-none rounded-xl border border-solid border-gray-400 bg-gray-200 p-1 indent-2"
-					rows={4}
 				/>
 			</div>
 
-			<button className="rounded-xl border border-solid border-pink-700 bg-pink-700 p-2 font-medium text-white">
-				{t('contact.form.send')}
+			<button
+				className="rounded-xl border border-solid border-pink-700 bg-pink-700 p-2 font-medium text-white"
+				disabled={loading}
+			>
+				{loading ? 'Sending...' : t('contact.form.send')}
 			</button>
 		</form>
 	);

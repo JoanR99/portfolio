@@ -57,7 +57,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="mt-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2">
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-2">
 							<Image
 								src="/images/sn-frame.png"
 								alt="Sticky Notes"
@@ -87,7 +87,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="my-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400">
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700">
 							<Image
 								src="/images/sn-2.png"
 								alt="Sticky Notes - Login"
@@ -106,7 +106,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="my-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2 lg:mt-6">
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-2 lg:mt-6">
 							<Image
 								src="/images/sn-3.png"
 								alt="Sticky Notes - Sign up"
@@ -131,7 +131,7 @@ const Home: NextPage = () => {
 							</p>
 						</div>
 
-						<ImageContainer className="m-2 mt-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-3 lg:mt-6">
+						<ImageContainer className="m-2 mt-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-3 lg:mt-6">
 							<Image
 								src="/images/sn-4.png"
 								alt="Sticky Notes - Add note"
@@ -160,7 +160,7 @@ const Home: NextPage = () => {
 					</div>
 
 					<div className="my-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 lg:order-2">
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-2">
 							<Image
 								src="/images/sn-5.png"
 								alt="Sticky Notes - Note"

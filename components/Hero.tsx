@@ -9,7 +9,7 @@ const Hero = () => {
 	const { t } = useTranslation('');
 
 	return (
-		<main className="min-h-screen pt-24 sm:pt-28 md:pt-32" id="hero">
+		<main className="min-h-fit pt-24 sm:pt-28 md:pt-32" id="hero">
 			<h2 className="text-center text-2xl font-bold sm:text-3xl md:mb-2 md:text-4xl lg:text-5xl">
 				{t('hero.greet')} <span className="text-teal-600">Joan Romero</span>
 			</h2>
@@ -98,7 +98,7 @@ const Hero = () => {
 						opacity: 0.9,
 						transition: { duration: 0.1 },
 					}}
-					className="rounded-xl border border-solid border-pink-700 bg-pink-700 p-2 font-medium text-white shadow-xl shadow-gray-400"
+					className="rounded-xl border border-solid border-pink-600 bg-pink-700 p-2 font-medium text-white shadow-lg shadow-gray-400 dark:shadow-teal-700"
 					href="/CV_Joan_Romero.pdf"
 					download
 				>

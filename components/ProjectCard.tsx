@@ -19,7 +19,7 @@ const ProjectCard = ({ children }: Props) => {
 			transition={{
 				duration: 1.5,
 			}}
-			className="grid grid-cols-1 gap-6 rounded-xl border border-solid p-2 shadow-xl md:grid-cols-2"
+			className="grid grid-cols-1 gap-6 rounded-xl border p-2 shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700  md:grid-cols-2"
 		>
 			{children}
 		</motion.article>
