@@ -4,9 +4,13 @@ import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { motion } from 'framer-motion';
 import { useTranslation } from 'next-i18next';
 import TypingBanner from './TypingBanner';
+import { useRouter } from 'next/router';
 
 const Hero = () => {
 	const { t } = useTranslation('');
+	const router = useRouter();
+
+	const locale = router.locale;
 
 	return (
 		<main className="min-h-fit pt-24 sm:pt-28 md:pt-32" id="hero">
@@ -99,7 +103,7 @@ const Hero = () => {
 						transition: { duration: 0.1 },
 					}}
 					className="rounded-xl border border-solid border-pink-600 bg-pink-700 p-2 font-medium text-white shadow-lg shadow-gray-400 dark:shadow-teal-700"
-					href="/CV_Joan_Romero.pdf"
+					href={`/${locale}_CV_Joan_Romero.pdf`}
 					download
 				>
 					{t('hero.cv')}
