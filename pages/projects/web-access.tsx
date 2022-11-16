@@ -162,10 +162,6 @@ const Home: NextPage = () => {
 								<p className="text-md mt-4">
 									{t('web_access.learning.f_desc')}
 								</p>
-
-								<p className="text-md mt-2">
-									{t('web_access.learning.s_desc')}
-								</p>
 							</div>
 						</div>
 					</div>

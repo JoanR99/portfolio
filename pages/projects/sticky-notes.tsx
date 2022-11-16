@@ -126,9 +126,6 @@ const Home: NextPage = () => {
 							<p className="text-md mt-2">
 								{t('sticky_notes.development.s_desc')}
 							</p>
-							<p className="text-md mt-2">
-								{t('sticky_notes.development.t_desc')}
-							</p>
 						</div>
 
 						<ImageContainer className="m-2 mt-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-3 lg:mt-6">
@@ -153,9 +150,6 @@ const Home: NextPage = () => {
 							<p className="text-md mt-2">
 								{t('sticky_notes.challenges.s_desc')}
 							</p>
-							<p className="text-md mt-2">
-								{t('sticky_notes.challenges.t_desc')}
-							</p>
 						</div>
 					</div>
 
@@ -177,10 +171,6 @@ const Home: NextPage = () => {
 								</h4>
 								<p className="text-md mt-4">
 									{t('sticky_notes.learning.f_desc')}
-								</p>
-
-								<p className="text-md mt-2">
-									{t('sticky_notes.learning.s_desc')}
 								</p>
 							</div>
 						</div>

@@ -125,7 +125,6 @@ const Home: NextPage = () => {
 							</h4>
 							<p className="text-md mt-4">{t('coroshop.development.f_desc')}</p>
 							<p className="text-md mt-2">{t('coroshop.development.s_desc')}</p>
-							<p className="text-md mt-2">{t('coroshop.development.t_desc')}</p>
 						</div>
 
 						<ImageContainer className="m-2 mt-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-3 lg:mt-6">
@@ -166,8 +165,6 @@ const Home: NextPage = () => {
 									{t('projects.titles.learning')}
 								</h4>
 								<p className="text-md mt-4">{t('coroshop.learning.f_desc')}</p>
-
-								<p className="text-md mt-2">{t('coroshop.learning.s_desc')}</p>
 							</div>
 						</div>
 					</div>
