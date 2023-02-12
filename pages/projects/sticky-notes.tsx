@@ -5,19 +5,18 @@ import { useTranslation } from 'next-i18next';
 import Image from 'next/image';
 import {
 	SiTypescript,
-	SiReact,
 	SiNodedotjs,
-	SiExpress,
 	SiPostgresql,
-	SiMaterialui,
-	SiJest,
 	SiPrisma,
+	SiTailwindcss,
+	SiFastify,
 } from 'react-icons/si';
 import GithubButton from '../../components/GithubButton';
 import VisitButton from '../../components/VisitButton';
 import ImageContainer from '../../components/ImageContainer';
 import WebAccessCard from '../../components/WebAccessCard';
 import CoroshopCard from '../../components/CoroshopCard';
+import { RiVuejsFill } from 'react-icons/ri';
 
 export async function getStaticProps({ locale }: { locale: string }) {
 	return {
@@ -45,13 +44,13 @@ const Home: NextPage = () => {
 					<p className="text-md mt-4">{t('sticky_notes.desc')}</p>
 
 					<div className="mt-6 flex w-full justify-center">
-						<GithubButton href="https://github.com/JoanR99/sticky-notes-server">
+						<GithubButton href="https://github.com/JoanR99/sticky-notes-server-fastify">
 							Backend
 						</GithubButton>
-						<GithubButton href="https://github.com/JoanR99/sticky-notes-client">
+						<GithubButton href="https://github.com/JoanR99/sticky-notes-client-vue">
 							Frontend
 						</GithubButton>
-						<VisitButton href="https://sticky-notes-neon.vercel.app/">
+						<VisitButton href="https://sticky-notes-client-vue.vercel.app/">
 							{t('visit')}
 						</VisitButton>
 					</div>
@@ -59,7 +58,7 @@ const Home: NextPage = () => {
 					<div className="mt-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
 						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-2">
 							<Image
-								src="/images/sn-frame.png"
+								src="/images/sticky-notes.png"
 								alt="Sticky Notes"
 								width={2000}
 								height={1400}
@@ -71,14 +70,13 @@ const Home: NextPage = () => {
 							<div>
 								<h4 className="text-xl font-bold text-teal-700">Stack</h4>
 								<div className="mt-4 flex w-fit">
-									<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
-									<SiReact className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
-									<SiMaterialui className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
+									<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-blue-600 sm:h-8' />
+									<RiVuejsFill className='sm:w-8" mr-4 h-6 w-6 text-green-700 sm:h-8' />
+									<SiTailwindcss className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 									<SiNodedotjs className='sm:w-8" mr-4 h-6 w-6 text-lime-700 sm:h-8' />
-									<SiExpress className='sm:w-8" mr-4 h-6 w-6 text-lime-700 sm:h-8' />
+									<SiFastify className='sm:w-8" mr-4 h-6 w-6 text-black sm:h-8' />
 									<SiPrisma className='sm:w-8" mr-4 h-6 w-6 text-blue-900 sm:h-8' />
 									<SiPostgresql className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
-									<SiJest className='sm:w-8" mr-4 h-6 w-6 text-red-800 sm:h-8' />
 								</div>
 								<p className="text-md mt-4">{t('sticky_notes.stack.f_desc')}</p>
 								<p className="text-md mt-2">{t('sticky_notes.stack.s_desc')}</p>

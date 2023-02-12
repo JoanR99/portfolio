@@ -7,7 +7,6 @@ import Hero from '../components/Hero';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'next-i18next';
 
 export async function getStaticProps({ locale }: { locale: string }) {
 	return {
@@ -18,7 +17,6 @@ export async function getStaticProps({ locale }: { locale: string }) {
 }
 
 const Home: NextPage = () => {
-	const { t } = useTranslation('');
 	return (
 		<div>
 			<div className="mx-auto max-w-sm  px-4 sm:max-w-xl md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">

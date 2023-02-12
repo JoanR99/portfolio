@@ -15,7 +15,28 @@ import {
 	SiTailwindcss,
 	SiMaterialui,
 	SiFirebase,
+	SiFastapi,
+	SiDocker,
+	SiSvelte,
+	SiPython,
+	SiPhp,
+	SiCplusplus,
+	SiRedux,
+	SiFastify,
+	SiJest,
+	SiPostman,
+	SiPrisma,
+	SiSequelize,
+	SiMysql,
+	SiSqlite,
+	SiGit,
+	SiGithub,
+	SiVisualstudiocode,
+	SiFigma,
+	SiGo,
+	SiPytest,
 } from 'react-icons/si';
+import { RiVuejsFill } from 'react-icons/ri';
 import { motion } from 'framer-motion';
 import SkillCard from './SkillCard';
 import { useTranslation } from 'next-i18next';
@@ -68,11 +89,11 @@ const Skills = () => {
 					</a>
 					{t('skills.second_p')}
 				</p>
-
-				<h3 className="mt-8 text-xl font-bold text-teal-700">
-					{t('skills.second_t')}
-				</h3>
 			</div>
+
+			<h3 className="mt-8 text-xl font-bold text-teal-700">
+				{t('skills.languages')}
+			</h3>
 			<motion.div
 				initial={{
 					opacity: 0,
@@ -88,23 +109,84 @@ const Skills = () => {
 				className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8"
 			>
 				<SkillCard>
+					<SiHtml5 className='sm:w-8" mr-2 h-6 w-6 text-orange-600 sm:h-8' />
+					<p className="font-medium">HTML5</p>
+				</SkillCard>
+				<SkillCard>
+					<SiCss3 className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
+					<p className="font-medium">CSS3</p>
+				</SkillCard>
+				<SkillCard>
 					<SiJavascript className='sm:w-8" mr-2 h-6 w-6 text-yellow-400 sm:h-8' />
 					<p className="font-medium">JavaScript</p>
 				</SkillCard>
 
 				<SkillCard>
-					<SiTypescript className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
+					<SiTypescript className='sm:w-8" mr-2 h-6 w-6 text-blue-600 sm:h-8' />
 					<p className="font-medium">TypeScript</p>
 				</SkillCard>
 
 				<SkillCard>
-					<SiHtml5 className='sm:w-8" mr-2 h-6 w-6 text-orange-600 sm:h-8' />
-					<p className="font-medium">HTML5</p>
+					<SiPython className='sm:w-8" mr-2 h-6 w-6 text-yellow-400 sm:h-8' />
+					<p className="font-medium">Python</p>
 				</SkillCard>
 
 				<SkillCard>
-					<SiCss3 className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
-					<p className="font-medium">CSS3</p>
+					<SiGo className='sm:w-8" mr-2 h-7 w-7 text-sky-600 sm:h-8' />
+					<p className="font-medium">Go</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiPhp className='sm:w-8" mr-2 h-7 w-7 text-sky-600 sm:h-8' />
+					<p className="font-medium">PHP</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiCplusplus className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
+					<p className="font-medium">C++</p>
+				</SkillCard>
+			</motion.div>
+
+			<h3 className="mt-12 text-xl font-bold text-teal-700">
+				{t('skills.frontend')}
+			</h3>
+			<motion.div
+				initial={{
+					opacity: 0,
+					scale: 0.5,
+				}}
+				whileInView={{
+					opacity: 1,
+					scale: 1,
+				}}
+				transition={{
+					duration: 1.5,
+				}}
+				className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8"
+			>
+				<SkillCard>
+					<SiReact className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
+					<p className="font-medium">React</p>
+				</SkillCard>
+
+				<SkillCard>
+					<RiVuejsFill className='sm:w-8" mr-2 h-6 w-6 text-green-700 sm:h-8' />
+					<p className="font-medium">Vue</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiSvelte className='sm:w-8" mr-2 h-6 w-6 text-orange-600 sm:h-8' />
+					<p className="font-medium">Svelte</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiNextdotjs className='sm:w-8" mr-2 h-6 w-6 text-black sm:h-8' />
+					<p className="font-medium">Next</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiSass className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
+					<p className="font-medium">SASS</p>
 				</SkillCard>
 
 				<SkillCard>
@@ -116,22 +198,29 @@ const Skills = () => {
 					<SiMaterialui className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
 					<p className="font-medium">Material UI</p>
 				</SkillCard>
-
 				<SkillCard>
-					<SiSass className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
-					<p className="font-medium">SASS</p>
+					<SiRedux className='sm:w-8" mr-2 h-6 w-6 text-purple-600 sm:h-8' />
+					<p className="font-medium">Redux</p>
 				</SkillCard>
+			</motion.div>
 
-				<SkillCard>
-					<SiReact className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
-					<p className="font-medium">React</p>
-				</SkillCard>
-
-				<SkillCard>
-					<SiNextdotjs className='sm:w-8" mr-2 h-6 w-6 text-black sm:h-8' />
-					<p className="font-medium">Next</p>
-				</SkillCard>
-
+			<h3 className="mt-12 text-xl font-bold text-teal-700">
+				{t('skills.backend')}
+			</h3>
+			<motion.div
+				initial={{
+					opacity: 0,
+					scale: 0.5,
+				}}
+				whileInView={{
+					opacity: 1,
+					scale: 1,
+				}}
+				transition={{
+					duration: 1.5,
+				}}
+				className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8"
+			>
 				<SkillCard>
 					<SiNodedotjs className='sm:w-8" mr-2 h-6 w-6 text-lime-700 sm:h-8' />
 					<p className="font-medium">Node</p>
@@ -148,13 +237,28 @@ const Skills = () => {
 				</SkillCard>
 
 				<SkillCard>
+					<SiFastify className='sm:w-8" mr-2 h-6 w-6 text-black sm:h-8' />
+					<p className="font-medium">Fastify</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiFastapi className='sm:w-8" mr-2 h-6 w-6 text-green-700 sm:h-8' />
+					<p className="font-medium">Fastapi</p>
+				</SkillCard>
+
+				<SkillCard>
 					<SiFirebase className='sm:w-8" mr-2 h-6 w-6 text-orange-500 sm:h-8' />
 					<p className="font-medium">Firebase</p>
 				</SkillCard>
 
 				<SkillCard>
-					<SiGraphql className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
-					<p className="font-medium">GraphQL</p>
+					<SiPrisma className='sm:w-8" mr-2 h-6 w-6 text-blue-800 sm:h-8' />
+					<p className="font-medium">Prisma</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiSequelize className='sm:w-8" mr-2 h-6 w-6 text-blue-600 sm:h-8' />
+					<p className="font-medium">Sequelize</p>
 				</SkillCard>
 
 				<SkillCard>
@@ -165,6 +269,73 @@ const Skills = () => {
 				<SkillCard>
 					<SiMongodb className='sm:w-8" mr-2 h-6 w-6 text-green-700 sm:h-8' />
 					<p className="font-medium">MongoDB</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiMysql className='sm:w-8" mr-2 h-6 w-6 text-blue-600 sm:h-8' />
+					<p className="font-medium">MySQL</p>
+				</SkillCard>
+				<SkillCard>
+					<SiSqlite className='sm:w-8" mr-2 h-6 w-6 text-blue-600 sm:h-8' />
+					<p className="font-medium">SQLite</p>
+				</SkillCard>
+			</motion.div>
+
+			<h3 className="mt-12 text-xl font-bold text-teal-700">
+				{t('skills.other')}
+			</h3>
+			<motion.div
+				initial={{
+					opacity: 0,
+					scale: 0.5,
+				}}
+				whileInView={{
+					opacity: 1,
+					scale: 1,
+				}}
+				transition={{
+					duration: 1.5,
+				}}
+				className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8"
+			>
+				<SkillCard>
+					<SiDocker className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
+					<p className="font-medium">Docker</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiGraphql className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
+					<p className="font-medium">GraphQL</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiGit className='sm:w-8" mr-2 h-6 w-6 text-red-600 sm:h-8' />
+					<p className="font-medium">Git</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiGithub className='sm:w-8" mr-2 h-6 w-6 text-black sm:h-8' />
+					<p className="font-medium">Github</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiJest className='sm:w-8" mr-2 h-6 w-6 text-red-700 sm:h-8' />
+					<p className="font-medium">Jest</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiPytest className='sm:w-8" mr-4 h-6 w-6 text-blue-600 sm:h-8' />
+					<p className="font-medium">Pytest</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiFigma className='sm:w-8" mr-2 h-6 w-6 text-red-700 sm:h-8' />
+					<p className="font-medium">Figma</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiPostman className='sm:w-8" mr-2 h-6 w-6 text-orange-700 sm:h-8' />
+					<p className="font-medium">Postman</p>
 				</SkillCard>
 			</motion.div>
 		</div>

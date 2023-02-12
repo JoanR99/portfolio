@@ -103,7 +103,7 @@ const Hero = () => {
 						transition: { duration: 0.1 },
 					}}
 					className="rounded-xl border border-solid border-pink-600 bg-pink-700 p-2 font-medium text-white shadow-lg shadow-gray-400 dark:shadow-teal-700"
-					href={`/${locale}_CV_Joan_Romero.pdf`}
+					href={`/Joan_Romero_CV_${locale?.toUpperCase()}.pdf`}
 					download
 				>
 					{t('hero.cv')}

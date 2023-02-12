@@ -27,7 +27,7 @@ const CoroshopCard = () => {
 					{t('projects.coroshop.desc')}
 				</p>
 				<div className="mt-4 flex flex-wrap justify-center">
-					<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
+					<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-blue-600 sm:h-8' />
 					<SiReact className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 					<SiRedux className='sm:w-8" mr-4 h-6 w-6 text-purple-700 sm:h-8' />
 					<SiStyledcomponents className='sm:w-8" mr-4 h-12 w-12 text-pink-700 sm:h-8' />

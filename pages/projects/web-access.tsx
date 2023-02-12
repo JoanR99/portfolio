@@ -4,12 +4,12 @@ import Image from 'next/image';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import {
-	SiJavascript,
 	SiSass,
-	SiReact,
-	SiNodedotjs,
-	SiExpress,
-	SiJest,
+	SiTypescript,
+	SiSvelte,
+	SiPython,
+	SiFastapi,
+	SiPytest,
 } from 'react-icons/si';
 import GithubButton from '../../components/GithubButton';
 import VisitButton from '../../components/VisitButton';
@@ -43,13 +43,13 @@ const Home: NextPage = () => {
 					<p className="text-md mt-4">{t('web_access.desc')}</p>
 
 					<div className="mt-6 flex w-full justify-center">
-						<GithubButton href="https://github.com/JoanR99/web-access-server">
+						<GithubButton href="https://github.com/JoanR99/web-access-server-fastapi">
 							Backend
 						</GithubButton>
-						<GithubButton href="https://github.com/JoanR99/web-access-client">
+						<GithubButton href="https://github.com/JoanR99/web-access-client-svelte">
 							Frontend
 						</GithubButton>
-						<VisitButton href="https://web-access.vercel.app/">
+						<VisitButton href="https://web-access-client-svelte.vercel.app/">
 							{t('visit')}
 						</VisitButton>
 					</div>
@@ -69,12 +69,12 @@ const Home: NextPage = () => {
 							<div>
 								<h4 className="text-xl font-bold text-teal-700">Stack</h4>
 								<div className="mt-4 flex w-fit">
-									<SiJavascript className='sm:w-10" mr-4 h-6 w-6 text-yellow-400 sm:h-10' />
-									<SiReact className='sm:w-10" mr-4 h-6 w-6 text-sky-600 sm:h-10' />
-									<SiSass className='sm:w-10" mr-4 h-6 w-6 text-pink-700 sm:h-10' />
-									<SiNodedotjs className='sm:w-10" mr-4 h-6 w-6 text-lime-700 sm:h-10' />
-									<SiExpress className='sm:w-10" mr-4 h-6 w-6 text-lime-700 sm:h-10' />
-									<SiJest className='sm:w-10" h-6 w-6 text-red-800 sm:h-10' />
+									<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-blue-600 sm:h-8' />
+									<SiSvelte className='sm:w-8" mr-4 h-6 w-6 text-orange-600 sm:h-8' />
+									<SiSass className='sm:w-8" mr-4 h-6 w-6 text-pink-700 sm:h-8' />
+									<SiPython className='sm:w-8" mr-4 h-6 w-6 text-yellow-600 sm:h-8' />
+									<SiFastapi className='sm:w-8" mr-4 h-6 w-6 text-green-700 sm:h-8' />
+									<SiPytest className='sm:w-8" mr-4 h-6 w-6 text-blue-600 sm:h-8' />
 								</div>
 								<p className="text-md mt-4">{t('web_access.stack.desc')}</p>
 							</div>
