@@ -22,9 +22,9 @@
 	},
 	"skills": {
 		"title": "Skills",
-		"first_p": "At university, I learned basic programming and more advanced concepts like object-oriented programming, data structures, algorithms, and recursion, along with basic concepts of software engineering, such as the case of the software life cycle, starting from the analysis to the design and implementation of systems. On the other hand, I have finished courses like",
+		"first_p": "In college, I learned programming and basic software engineering concepts, such as the case of software life cycle, from the analysis of the system to the design and implementation. On the other hand, I have completed",
 		"&": "and",
-		"second_p": ", in addition to learning other technologies, frameworks, and libraries with free resources such as YouTube or the documentation of said technologies.",
+		"second_p": ", in addition to learning other technologies, frameworks, and libraries with free resources such as YouTube.",
 		"languages": "Languages",
 		"frontend": "Frontend",
 		"backend": "Backend",

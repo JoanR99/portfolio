@@ -5,7 +5,6 @@ import {
 	SiCss3,
 	SiSass,
 	SiReact,
-	SiNodedotjs,
 	SiExpress,
 	SiNestjs,
 	SiGraphql,
@@ -13,28 +12,17 @@ import {
 	SiMongodb,
 	SiNextdotjs,
 	SiTailwindcss,
-	SiMaterialui,
 	SiFirebase,
 	SiFastapi,
-	SiDocker,
 	SiSvelte,
 	SiPython,
-	SiPhp,
-	SiCplusplus,
 	SiRedux,
 	SiFastify,
 	SiJest,
 	SiPostman,
 	SiPrisma,
-	SiSequelize,
-	SiMysql,
-	SiSqlite,
 	SiGit,
-	SiGithub,
-	SiVisualstudiocode,
-	SiFigma,
-	SiGo,
-	SiPytest,
+	SiStyledcomponents,
 } from 'react-icons/si';
 import { RiVuejsFill } from 'react-icons/ri';
 import { motion } from 'framer-motion';
@@ -130,21 +118,6 @@ const Skills = () => {
 					<SiPython className='sm:w-8" mr-2 h-6 w-6 text-yellow-400 sm:h-8' />
 					<p className="font-medium">Python</p>
 				</SkillCard>
-
-				<SkillCard>
-					<SiGo className='sm:w-8" mr-2 h-7 w-7 text-sky-600 sm:h-8' />
-					<p className="font-medium">Go</p>
-				</SkillCard>
-
-				<SkillCard>
-					<SiPhp className='sm:w-8" mr-2 h-7 w-7 text-sky-600 sm:h-8' />
-					<p className="font-medium">PHP</p>
-				</SkillCard>
-
-				<SkillCard>
-					<SiCplusplus className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
-					<p className="font-medium">C++</p>
-				</SkillCard>
 			</motion.div>
 
 			<h3 className="mt-12 text-xl font-bold text-teal-700">
@@ -195,9 +168,10 @@ const Skills = () => {
 				</SkillCard>
 
 				<SkillCard>
-					<SiMaterialui className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
-					<p className="font-medium">Material UI</p>
+					<SiStyledcomponents className='sm:w-8" mr-2 h-8 w-8 text-pink-400 sm:h-8' />
+					<p className="font-medium">Styled Components</p>
 				</SkillCard>
+
 				<SkillCard>
 					<SiRedux className='sm:w-8" mr-2 h-6 w-6 text-purple-600 sm:h-8' />
 					<p className="font-medium">Redux</p>
@@ -221,11 +195,6 @@ const Skills = () => {
 				}}
 				className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8"
 			>
-				<SkillCard>
-					<SiNodedotjs className='sm:w-8" mr-2 h-6 w-6 text-lime-700 sm:h-8' />
-					<p className="font-medium">Node</p>
-				</SkillCard>
-
 				<SkillCard>
 					<SiExpress className='sm:w-8" mr-2 h-6 w-6 text-lime-700 sm:h-8' />
 					<p className="font-medium">Express</p>
@@ -257,11 +226,6 @@ const Skills = () => {
 				</SkillCard>
 
 				<SkillCard>
-					<SiSequelize className='sm:w-8" mr-2 h-6 w-6 text-blue-600 sm:h-8' />
-					<p className="font-medium">Sequelize</p>
-				</SkillCard>
-
-				<SkillCard>
 					<SiPostgresql className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
 					<p className="font-medium">PostgreSQL</p>
 				</SkillCard>
@@ -269,15 +233,6 @@ const Skills = () => {
 				<SkillCard>
 					<SiMongodb className='sm:w-8" mr-2 h-6 w-6 text-green-700 sm:h-8' />
 					<p className="font-medium">MongoDB</p>
-				</SkillCard>
-
-				<SkillCard>
-					<SiMysql className='sm:w-8" mr-2 h-6 w-6 text-blue-600 sm:h-8' />
-					<p className="font-medium">MySQL</p>
-				</SkillCard>
-				<SkillCard>
-					<SiSqlite className='sm:w-8" mr-2 h-6 w-6 text-blue-600 sm:h-8' />
-					<p className="font-medium">SQLite</p>
 				</SkillCard>
 			</motion.div>
 
@@ -299,11 +254,6 @@ const Skills = () => {
 				className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8"
 			>
 				<SkillCard>
-					<SiDocker className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
-					<p className="font-medium">Docker</p>
-				</SkillCard>
-
-				<SkillCard>
 					<SiGraphql className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
 					<p className="font-medium">GraphQL</p>
 				</SkillCard>
@@ -314,23 +264,8 @@ const Skills = () => {
 				</SkillCard>
 
 				<SkillCard>
-					<SiGithub className='sm:w-8" mr-2 h-6 w-6 text-black sm:h-8' />
-					<p className="font-medium">Github</p>
-				</SkillCard>
-
-				<SkillCard>
 					<SiJest className='sm:w-8" mr-2 h-6 w-6 text-red-700 sm:h-8' />
 					<p className="font-medium">Jest</p>
-				</SkillCard>
-
-				<SkillCard>
-					<SiPytest className='sm:w-8" mr-4 h-6 w-6 text-blue-600 sm:h-8' />
-					<p className="font-medium">Pytest</p>
-				</SkillCard>
-
-				<SkillCard>
-					<SiFigma className='sm:w-8" mr-2 h-6 w-6 text-red-700 sm:h-8' />
-					<p className="font-medium">Figma</p>
 				</SkillCard>
 
 				<SkillCard>

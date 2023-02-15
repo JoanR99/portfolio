@@ -22,9 +22,9 @@
 	},
 	"skills": {
 		"title": "Habilidades",
-		"first_p": "En la universidad aprendí programación básica además de conceptos más avanzados como es el caso de la programación orientada a objetos, las estructuras de datos, los algoritmos y la recursividad, aunado a conceptos básicos de la ingeniería de software, como es el caso del ciclo de vida del software, partiendo desde el análisis hasta el diseño e implementación de sistemas. Por otro lado, he terminado cursos como",
+		"first_p": "En la universidad aprendí programación y conceptos básicos de la ingeniería de software, como es el caso del ciclo de vida del software, partiendo desde el análisis hasta el diseño e implementación de sistemas. Por otro lado, he terminado cursos como",
 		"&": "y",
-		"second_p": ", además de aprender otras tecnologías, frameworks y librerías con recursos gratuitos como es el caso de Youtube o de la propia documentación de dichas tecnologías.",
+		"second_p": ", además de aprender otras tecnologías, frameworks y librerías con recursos gratuitos como es el caso de Youtube.",
 		"languages": "Lenguajes",
 		"frontend": "Frontend",
 		"backend": "Backend",
