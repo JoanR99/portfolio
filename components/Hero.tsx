@@ -13,7 +13,10 @@ const Hero = () => {
 	const locale = router.locale;
 
 	return (
-		<main className="min-h-fit pt-24 sm:pt-28 md:pt-32" id="hero">
+		<main
+			className="flex min-h-screen flex-col items-center justify-center"
+			id="hero"
+		>
 			<h2 className="text-center text-2xl font-bold sm:text-3xl md:mb-2 md:text-4xl lg:text-5xl">
 				{t('hero.greet')} <span className="text-teal-600">Joan Romero</span>
 			</h2>
@@ -21,7 +24,7 @@ const Hero = () => {
 			<p className="text-md mt-6 text-center sm:mt-8 sm:text-lg md:text-xl">
 				{t('hero.skills')}
 			</p>
-			<div className="mt-5 flex justify-center align-middle">
+			<div className="mt-16 flex justify-center align-middle">
 				<motion.a
 					initial={{
 						x: -200,
@@ -63,26 +66,8 @@ const Hero = () => {
 					<BsGithub className="mr-4 h-6 w-6 text-pink-700  hover:scale-105 hover:opacity-90 sm:h-8 sm:w-8" />
 				</motion.a>
 			</div>
-			<motion.div
-				initial={{ opacity: 0, scale: 0.5 }}
-				animate={{ opacity: 1, scale: 1 }}
-				transition={{
-					duration: 1.5,
-					delay: 0.5,
-					ease: [0, 0.71, 0.2, 1.01],
-				}}
-				className="mt-12 flex justify-center"
-			>
-				<Image
-					src="/images/profile.jpg"
-					alt="profile"
-					width={200}
-					height={200}
-					className="rounded-full"
-				/>
-			</motion.div>
 
-			<div className="mt-8 flex justify-center">
+			<div className="mt-16 flex justify-center">
 				<motion.a
 					initial={{
 						y: 100,

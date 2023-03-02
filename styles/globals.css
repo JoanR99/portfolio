@@ -8,7 +8,21 @@
 	}
 
 	body {
-		@apply bg-[#EEF1F8];
+		@apply bg-[#ecf0f3];
 		@apply bg-gray-50 text-gray-900 dark:bg-[#111827] dark:text-gray-100;
+	}
+
+	::-webkit-scrollbar {
+		width: 15px;
+	}
+
+	::-webkit-scrollbar-track {
+		@apply bg-gray-300 dark:bg-gray-700;
+		border-radius: 3rem;
+	}
+
+	::-webkit-scrollbar-thumb {
+		@apply bg-teal-600;
+		border-radius: 3rem;
 	}
 }
