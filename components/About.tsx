@@ -6,7 +6,7 @@ import { useTranslation } from 'next-i18next';
 const About = () => {
 	const { t } = useTranslation('');
 	return (
-		<div className="my-24 min-h-fit scroll-mt-24" id="about">
+		<div className="dm:my-24 my-8 min-h-fit scroll-mt-24" id="about">
 			<h3 className="text-xl font-bold text-teal-600 sm:text-2xl md:text-3xl lg:text-4xl">
 				{t('about.title')}
 			</h3>

@@ -1,10 +1,10 @@
-import Image from 'next/image';
 import { BsLinkedin, BsGithub } from 'react-icons/bs';
 
 import { motion } from 'framer-motion';
 import { useTranslation } from 'next-i18next';
 import TypingBanner from './TypingBanner';
 import { useRouter } from 'next/router';
+import ComputerCanvas from './ComputerCanvas';
 
 const Hero = () => {
 	const { t } = useTranslation('');
@@ -14,7 +14,7 @@ const Hero = () => {
 
 	return (
 		<main
-			className="flex min-h-screen flex-col items-center justify-center"
+			className="flex min-h-screen flex-col items-center justify-center md:mt-8"
 			id="hero"
 		>
 			<h2 className="text-center text-2xl font-bold sm:text-3xl md:mb-2 md:text-4xl lg:text-5xl">
@@ -24,7 +24,12 @@ const Hero = () => {
 			<p className="text-md mt-6 text-center sm:mt-8 sm:text-lg md:text-xl">
 				{t('hero.skills')}
 			</p>
-			<div className="mt-16 flex justify-center align-middle">
+
+			<div className="h-[200px] w-[300px] sm:w-[360px] md:h-[350px] md:w-[800px]">
+				<ComputerCanvas />
+			</div>
+
+			<div className="mt-4 flex w-24 justify-around align-middle md:mt-1">
 				<motion.a
 					initial={{
 						x: -200,
@@ -43,7 +48,7 @@ const Hero = () => {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<BsLinkedin className="mr-4 h-6 w-6 text-pink-700  hover:scale-105 hover:opacity-90 sm:h-8 sm:w-8" />
+					<BsLinkedin className="h-6 w-6 text-pink-700  hover:scale-105 hover:opacity-90 sm:h-8 sm:w-8" />
 				</motion.a>
 				<motion.a
 					initial={{
@@ -63,11 +68,11 @@ const Hero = () => {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
-					<BsGithub className="mr-4 h-6 w-6 text-pink-700  hover:scale-105 hover:opacity-90 sm:h-8 sm:w-8" />
+					<BsGithub className="h-6 w-6 text-pink-700  hover:scale-105 hover:opacity-90 sm:h-8 sm:w-8" />
 				</motion.a>
 			</div>
 
-			<div className="mt-16 flex justify-center">
+			<div className="mt-8 flex justify-center">
 				<motion.a
 					initial={{
 						y: 100,
