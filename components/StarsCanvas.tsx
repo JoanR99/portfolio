@@ -11,7 +11,7 @@ type Rotation = {
 };
 
 const Stars = () => {
-	const ref = useRef();
+	const ref = useRef(null);
 
 	const sphere = random.inSphere(new Float32Array(1000), {
 		radius: 1.2,
