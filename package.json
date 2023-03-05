@@ -12,6 +12,7 @@
     "@emailjs/browser": "^3.9.1",
     "@react-three/drei": "^9.57.0",
     "@react-three/fiber": "^8.11.6",
+    "@react-three/postprocessing": "^2.7.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "framer-motion": "^7.6.1",
     "i18next": "^22.0.4",

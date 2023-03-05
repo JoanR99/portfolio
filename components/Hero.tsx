@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'next-i18next';
 import TypingBanner from './TypingBanner';
 import { useRouter } from 'next/router';
-import ComputerCanvas from './ComputerCanvas';
+import Atom from './Atom';
 
 const Hero = () => {
 	const { t } = useTranslation('');
@@ -26,7 +26,7 @@ const Hero = () => {
 			</p>
 
 			<div className="h-[200px] w-[300px] sm:w-[360px] md:h-[350px] md:w-[800px]">
-				<ComputerCanvas />
+				<Atom />
 			</div>
 
 			<div className="mt-4 flex w-24 justify-around align-middle md:mt-1">

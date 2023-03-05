@@ -100,7 +100,7 @@ const Skills = () => {
 				transition={{
 					duration: 1.5,
 				}}
-				className="mt-6 flex flex-wrap gap-6"
+				className="mt-6 flex flex-wrap justify-center gap-6 md:justify-start"
 			>
 				<SkillCard>
 					<SiHtml5 className='sm:w-8" mr-2 h-6 w-6 text-orange-600 sm:h-8' />
@@ -141,7 +141,7 @@ const Skills = () => {
 				transition={{
 					duration: 1.5,
 				}}
-				className="mt-6 flex flex-wrap gap-6"
+				className="mt-6 flex flex-wrap justify-center gap-6 md:justify-start"
 			>
 				<SkillCard>
 					<SiReact className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
@@ -219,7 +219,7 @@ const Skills = () => {
 				transition={{
 					duration: 1.5,
 				}}
-				className="mt-6 flex flex-wrap gap-6"
+				className="mt-6 flex flex-wrap justify-center gap-6 md:justify-start"
 			>
 				<SkillCard>
 					<SiExpress className='sm:w-8" mr-2 h-6 w-6 text-lime-700 sm:h-8' />
@@ -277,7 +277,7 @@ const Skills = () => {
 				transition={{
 					duration: 1.5,
 				}}
-				className="mt-6 flex flex-wrap gap-6"
+				className="mt-6 flex flex-wrap justify-center gap-6 md:justify-start"
 			>
 				<SkillCard>
 					<SiGraphql className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
