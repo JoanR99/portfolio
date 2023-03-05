@@ -11,7 +11,7 @@ const Projects = () => {
 			<h3 className="text-xl font-bold text-teal-600 sm:text-2xl md:text-3xl lg:text-4xl">
 				{t('projects.title')}
 			</h3>
-			<div className="mt-8 grid w-full grid-cols-1 gap-6 md:gap-8">
+			<div className="mt-8 grid w-full grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-12">
 				<WebAccessCard />
 
 				<StickyNotesCard />

@@ -23,8 +23,14 @@ import {
 	SiPrisma,
 	SiGit,
 	SiStyledcomponents,
+	SiFigma,
+	SiVitest,
+	SiHeadlessui,
+	SiReactquery,
 } from 'react-icons/si';
 import { RiVuejsFill } from 'react-icons/ri';
+import { TbBrandRadixUi } from 'react-icons/tb';
+import { RxStitchesLogo } from 'react-icons/rx';
 import { motion } from 'framer-motion';
 import SkillCard from './SkillCard';
 import { useTranslation } from 'next-i18next';
@@ -94,7 +100,7 @@ const Skills = () => {
 				transition={{
 					duration: 1.5,
 				}}
-				className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8"
+				className="mt-6 flex flex-wrap gap-6"
 			>
 				<SkillCard>
 					<SiHtml5 className='sm:w-8" mr-2 h-6 w-6 text-orange-600 sm:h-8' />
@@ -135,7 +141,7 @@ const Skills = () => {
 				transition={{
 					duration: 1.5,
 				}}
-				className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8"
+				className="mt-6 flex flex-wrap gap-6"
 			>
 				<SkillCard>
 					<SiReact className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
@@ -158,6 +164,16 @@ const Skills = () => {
 				</SkillCard>
 
 				<SkillCard>
+					<SiHeadlessui className='sm:w-8" mr-2 h-6 w-6 text-indigo-700 sm:h-8' />
+					<p className="font-medium">Headless UI</p>
+				</SkillCard>
+
+				<SkillCard>
+					<TbBrandRadixUi className='sm:w-8" mr-2 h-7 w-7 text-black sm:h-8' />
+					<p className="font-medium">Radix UI</p>
+				</SkillCard>
+
+				<SkillCard>
 					<SiSass className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
 					<p className="font-medium">SASS</p>
 				</SkillCard>
@@ -173,8 +189,18 @@ const Skills = () => {
 				</SkillCard>
 
 				<SkillCard>
+					<RxStitchesLogo className='sm:w-8" mr-2 h-7 w-7 text-black sm:h-8' />
+					<p className="font-medium">Stitches</p>
+				</SkillCard>
+
+				<SkillCard>
 					<SiRedux className='sm:w-8" mr-2 h-6 w-6 text-purple-600 sm:h-8' />
 					<p className="font-medium">Redux</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiReactquery className='sm:w-8" mr-2 h-6 w-6 text-red-600 sm:h-8' />
+					<p className="font-medium">Tanstack Query</p>
 				</SkillCard>
 			</motion.div>
 
@@ -193,7 +219,7 @@ const Skills = () => {
 				transition={{
 					duration: 1.5,
 				}}
-				className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8"
+				className="mt-6 flex flex-wrap gap-6"
 			>
 				<SkillCard>
 					<SiExpress className='sm:w-8" mr-2 h-6 w-6 text-lime-700 sm:h-8' />
@@ -251,7 +277,7 @@ const Skills = () => {
 				transition={{
 					duration: 1.5,
 				}}
-				className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-8"
+				className="mt-6 flex flex-wrap gap-6"
 			>
 				<SkillCard>
 					<SiGraphql className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
@@ -269,8 +295,18 @@ const Skills = () => {
 				</SkillCard>
 
 				<SkillCard>
+					<SiVitest className='sm:w-8" mr-2 h-6 w-6 text-yellow-600 sm:h-8' />
+					<p className="font-medium">Vitest</p>
+				</SkillCard>
+
+				<SkillCard>
 					<SiPostman className='sm:w-8" mr-2 h-6 w-6 text-orange-700 sm:h-8' />
 					<p className="font-medium">Postman</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiFigma className='sm:w-8" mr-2 h-6 w-6 text-red-700 sm:h-8' />
+					<p className="font-medium">Figma</p>
 				</SkillCard>
 			</motion.div>
 		</div>

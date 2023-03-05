@@ -10,6 +10,9 @@ import {
 	SiPrisma,
 	SiTailwindcss,
 	SiFastify,
+	SiVitest,
+	SiHeadlessui,
+	SiReactquery,
 } from 'react-icons/si';
 import GithubButton from '../../components/GithubButton';
 import VisitButton from '../../components/VisitButton';
@@ -72,11 +75,14 @@ const Home: NextPage = () => {
 								<div className="mt-4 flex w-fit">
 									<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-blue-600 sm:h-8' />
 									<RiVuejsFill className='sm:w-8" mr-4 h-6 w-6 text-green-700 sm:h-8' />
+									<SiReactquery className='sm:w-8" mr-4 h-6 w-6 text-red-600 sm:h-8' />
 									<SiTailwindcss className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
+									<SiHeadlessui className='sm:w-8" mr-4 h-6 w-6 text-indigo-700 sm:h-8' />
 									<SiNodedotjs className='sm:w-8" mr-4 h-6 w-6 text-lime-700 sm:h-8' />
 									<SiFastify className='sm:w-8" mr-4 h-6 w-6 text-black sm:h-8' />
 									<SiPrisma className='sm:w-8" mr-4 h-6 w-6 text-blue-900 sm:h-8' />
 									<SiPostgresql className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
+									<SiVitest className='sm:w-8" mr-4 h-6 w-6 text-yellow-600 sm:h-8' />
 								</div>
 								<p className="text-md mt-4">{t('sticky_notes.stack.f_desc')}</p>
 								<p className="text-md mt-2">{t('sticky_notes.stack.s_desc')}</p>
@@ -178,7 +184,7 @@ const Home: NextPage = () => {
 					<h4 className="text-xl font-bold text-teal-700">
 						{t('projects.other')}
 					</h4>
-					<div className="mt-8 grid w-full grid-cols-1 gap-6 md:gap-8">
+					<div className="mt-8 grid w-full gap-6 md:grid-cols-2 md:gap-12">
 						<WebAccessCard />
 
 						<CoroshopCard />

@@ -18,8 +18,8 @@ const WebAccessCard = () => {
 		<ProjectCard>
 			<BlurImage src="/images/web-access.png" alt="WebAcess" />
 
-			<div className="flex flex-col items-center justify-between p-4 md:items-start">
-				<h3 className="text-md font-medium text-teal-700">WebAccess</h3>
+			<div className="flex flex-col items-center justify-between p-4">
+				<h3 className="text-lg font-bold text-teal-700">WebAccess</h3>
 				<p className="mt-2 text-center text-sm md:text-left">
 					{t('projects.web_access.desc')}
 				</p>

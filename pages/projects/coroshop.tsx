@@ -19,6 +19,8 @@ import VisitButton from '../../components/VisitButton';
 import ImageContainer from '../../components/ImageContainer';
 import WebAccessCard from '../../components/WebAccessCard';
 import StickyNotesCard from '../../components/StickyNotesCard';
+import { RxStitchesLogo } from 'react-icons/rx';
+import { TbBrandRadixUi } from 'react-icons/tb';
 
 export async function getStaticProps({ locale }: { locale: string }) {
 	return {
@@ -76,7 +78,8 @@ const Home: NextPage = () => {
 									<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 									<SiReact className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 									<SiRedux className='sm:w-8" mr-4 h-6 w-6 text-purple-700 sm:h-8' />
-									<SiStyledcomponents className='sm:w-8" mr-4 h-12 w-12 text-pink-700 sm:h-8' />
+									<RxStitchesLogo className='sm:w-8" mr-4 h-7 w-7 text-black sm:h-8' />
+									<TbBrandRadixUi className='sm:w-8" mr-4 h-7 w-7 text-black sm:h-8' />
 									<SiNodedotjs className='sm:w-8" mr-4 h-6 w-6 text-lime-700 sm:h-8' />
 									<SiNestjs className='sm:w-8" mr-4 h-6 w-6 text-red-700 sm:h-8' />
 									<SiGraphql className='sm:w-8" mr-4 h-6 w-6 text-pink-700 sm:h-8' />
@@ -173,7 +176,7 @@ const Home: NextPage = () => {
 					<h4 className="text-xl font-bold text-teal-700">
 						{t('projects.other')}
 					</h4>
-					<div className="mt-8 grid w-full grid-cols-1 gap-6 md:gap-8">
+					<div className="mt-8 grid w-full gap-6 md:grid-cols-2 md:gap-12">
 						<WebAccessCard />
 
 						<StickyNotesCard />

@@ -21,7 +21,7 @@
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-icons": "^4.6.0",
+    "react-icons": "^4.8.0",
     "react-simple-typewriter": "^4.0.5",
     "react-toastify": "^9.1.1",
     "three": "^0.150.1"
