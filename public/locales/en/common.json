@@ -17,8 +17,8 @@
 	},
 	"about": {
 		"title": "About me",
-		"first_p": "My journey into the programming world began at college with my first programming classes. At that time, I believed programmers were some class of hackers, and my knowledge of web development and programming was practically nil. In this way,  I learned the basic notions of programming through C++ language, developing small programs executed in the console. Subsequently, I began to study HTML, CSS, JavaScript, and PHP to build more complex programs with attractive user interfaces to fulfill the assigned projects at the university.",
-		"second_p": "Therefore, the first project I made to practice these technologies was a small repository to organize and store the data required to help people opt for bonuses provided by the government through a website. Later, at the end project, I felt immense satisfaction because I realized I could develop software helpful for people. Since then, I decided to specialize in web development, learning both self-taught and through courses and bootcamps."
+		"first_p": "My programming journey began with my first basic programming classes at college. At that time, I believed programmers were some class of hackers, and my knowledge of web development and programming was practically nil. In this way, the first programming language I learned was C++, where I began to develop basic programs executed in the console to practice the basic programming notions learned so far, as well as more advanced concepts such as object-oriented programming.",
+		"second_p": "Later, I began to venture into the world of web development while learning HTML, CSS, and JavaScript to develop more complex programs with more attractive user interfaces. In this way, I decided that I would dedicate myself to web development after practicing with these languages and learning about other technologies such as React and Node, which make it even easier to develop web pages and applications that generate real value for other people. Since then, I began to specialize in this area of programming, learning both self-taught and through courses and bootcamps."
 	},
 	"skills": {
 		"title": "Skills",

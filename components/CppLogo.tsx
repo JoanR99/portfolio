@@ -3,15 +3,15 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from './CanvasLoader';
 
-const Html = () => {
-	const html = useGLTF('./html_logo/scene.gltf');
+const Cpp = () => {
+	const cpp = useGLTF('./c/scene.gltf');
 
 	return (
 		<mesh>
 			<hemisphereLight intensity={0.15} groundColor="black" />
 			<pointLight intensity={1} />
 			<spotLight
-				position={[-20, 50, 10]}
+				position={[-20, 20, 10]}
 				angle={0.12}
 				penumbra={1}
 				intensity={1}
@@ -19,16 +19,16 @@ const Html = () => {
 				shadow-mapSize={1024}
 			/>
 			<primitive
-				object={html.scene}
-				scale={0.03}
-				position={[0.3, -5.7, 0]}
+				object={cpp.scene}
+				scale={0.11}
+				position={[0.3, 0, 0]}
 				rotation={[0, 0, 0]}
 			/>
 		</mesh>
 	);
 };
 
-const HtmlLogo = () => {
+const CppLogo = () => {
 	return (
 		<Canvas
 			frameloop="demand"
@@ -42,7 +42,7 @@ const HtmlLogo = () => {
 					maxPolarAngle={Math.PI / 2}
 					minPolarAngle={Math.PI / 2}
 				/>
-				<Html />
+				<Cpp />
 			</Suspense>
 
 			<Preload all />
@@ -50,4 +50,4 @@ const HtmlLogo = () => {
 	);
 };
 
-export default HtmlLogo;
+export default CppLogo;

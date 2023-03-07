@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'next-i18next';
 import TypingBanner from './TypingBanner';
 import { useRouter } from 'next/router';
-import Atom from './Atom';
+import WebDev from './WebDev';
 
 const Hero = () => {
 	const { t } = useTranslation('');
@@ -25,8 +25,8 @@ const Hero = () => {
 				{t('hero.skills')}
 			</p>
 
-			<div className="h-[200px] w-[300px] sm:w-[360px] md:h-[350px] md:w-[800px]">
-				<Atom />
+			<div className="h-[180px] w-[250px] sm:h-[250px] sm:w-[350px] md:h-[300px] md:w-[450px] lg:h-[350px] lg:w-[550px]">
+				<WebDev />
 			</div>
 
 			<div className="mt-4 flex w-24 justify-around align-middle md:mt-1">

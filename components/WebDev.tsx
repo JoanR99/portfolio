@@ -3,8 +3,8 @@ import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 import CanvasLoader from './CanvasLoader';
 
-const Room = () => {
-	const room = useGLTF('./hacker_room/scene.gltf');
+const Web = () => {
+	const web = useGLTF('./web_development/scene.gltf');
 
 	return (
 		<mesh>
@@ -17,21 +17,21 @@ const Room = () => {
 				intensity={0.1}
 			/>
 			<primitive
-				object={room.scene}
-				scale={0.05}
-				position={[0, -4, 0]}
-				rotation={[0, 0.6, 0]}
+				object={web.scene}
+				scale={1.3}
+				position={[0, -3, 2.5]}
+				rotation={[0, 0, 0]}
 			/>
 		</mesh>
 	);
 };
 
-const RoomCanvas = () => {
+const WebDev = () => {
 	return (
 		<Canvas
 			frameloop="demand"
 			shadows
-			camera={{ position: [20, 3, 5], fov: 37 }}
+			camera={{ position: [18, 3, 5], fov: 37 }}
 			gl={{ preserveDrawingBuffer: true }}
 		>
 			<Suspense fallback={<CanvasLoader />}>
@@ -40,7 +40,7 @@ const RoomCanvas = () => {
 					maxPolarAngle={Math.PI / 2}
 					minPolarAngle={Math.PI / 2}
 				/>
-				<Room />
+				<Web />
 			</Suspense>
 
 			<Preload all />
@@ -48,4 +48,4 @@ const RoomCanvas = () => {
 	);
 };
 
-export default RoomCanvas;
+export default WebDev;

@@ -1,9 +1,7 @@
 import { useTranslation } from 'next-i18next';
-import RoomCanvas from './RoomCanvas';
 import { motion } from 'framer-motion';
-import HtmlLogo from './HtmlLogo';
 import Atom from './Atom';
-import CssLogo from './CssLogo';
+import CppLogo from './CppLogo';
 
 const About = () => {
 	const { t } = useTranslation('');
@@ -29,18 +27,13 @@ const About = () => {
 				>
 					{t('about.first_p')}
 				</motion.p>
-				<div className="flex justify-center gap-8">
-					<div className="h-[200px] w-[130px] lg:h-[300px] lg:w-[200px]">
-						<HtmlLogo />
-					</div>
-					<div className="h-[200px] w-[130px] lg:h-[300px] lg:w-[200px]">
-						<CssLogo />
-					</div>
+				<div className="mx-auto h-[180px] w-[250px] sm:h-[250px] sm:w-[350px] md:my-8 lg:mt-0 lg:h-[250px] lg:w-[350px]">
+					<CppLogo />
 				</div>
 			</div>
 			<div className="mt-4 mb-4 flex flex-col-reverse items-center align-middle sm:mt-2 md:flex-row md:items-center md:justify-between md:gap-8">
-				<div className="mt-8 h-[200px] w-[300px] lg:mt-0 lg:h-[300px] lg:w-[450px]">
-					<RoomCanvas />
+				<div className="mx-auto h-[180px] w-[250px] sm:h-[250px] sm:w-[350px] md:my-8 lg:mt-0 lg:h-[250px] lg:w-[350px]">
+					<Atom />
 				</div>
 
 				<motion.p

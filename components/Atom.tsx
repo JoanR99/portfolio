@@ -48,10 +48,10 @@ const AtomShape = () => {
 };
 
 const Atom = () => (
-	<Canvas camera={{ position: [0, 0, 10], fov: 45 }}>
+	<Canvas camera={{ position: [0, 0, 10], fov: 35 }}>
 		<Suspense fallback={null}>
 			<AtomShape />
-			<OrbitControls enableZoom={false} autoRotate />
+			<OrbitControls enableZoom={false} />
 		</Suspense>
 	</Canvas>
 );
