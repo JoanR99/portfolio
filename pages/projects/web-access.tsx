@@ -16,6 +16,7 @@ import VisitButton from '../../components/VisitButton';
 import ImageContainer from '../../components/ImageContainer';
 import StickyNotesCard from '../../components/StickyNotesCard';
 import CoroshopCard from '../../components/CoroshopCard';
+import TimeKillerCard from '../../components/TimeKillerCard';
 
 export async function getStaticProps({ locale }: { locale: string }) {
 	return {
@@ -25,7 +26,7 @@ export async function getStaticProps({ locale }: { locale: string }) {
 	};
 }
 
-const Home: NextPage = () => {
+const Page: NextPage = () => {
 	const { t } = useTranslation('');
 	return (
 		<div className="mb-8">
@@ -174,6 +175,8 @@ const Home: NextPage = () => {
 						<StickyNotesCard />
 
 						<CoroshopCard />
+
+						<TimeKillerCard />
 					</div>
 				</div>
 			</div>
@@ -181,4 +184,4 @@ const Home: NextPage = () => {
 	);
 };
 
-export default Home;
+export default Page;

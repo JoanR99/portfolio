@@ -42,6 +42,9 @@
 		"coroshop": {
 			"desc": "E-commerce with Stripe or PayPal payments."
 		},
+		"time_killer": {
+			"desc": "Webapp with several offline games"
+		},
 		"titles": {
 			"origin": "Idea origin",
 			"development": "Development process",
@@ -126,6 +129,25 @@
 		},
 		"learning": {
 			"f_desc": "The development of this project helped me to increase my understanding of TypeScript, especially decorators since these are very used in Nest. In addition, it also increased my knowledge of dependency injection and how it eases the process of testing each module. Finally, I learned a better way to organize the folders and files of a project, consisting of grouping the files by feature, which allows me to have the dependencies of modules near each other."
+		}
+	},
+	"time_killer": {
+		"desc": "Time Killer is a web app that has several offline games such as Simon's game, Snake game, Flappy Bird, Memory, and Tetris. In addition, it allows the user to log in to access the ranking of best scores.",
+		"stack": {
+			"desc": "I developed the application with Next.js, which uses React as a library to build the interfaces. Also, I use Tailwind CSS for the styles and the hooks available in React to manage the application state. On the other hand, I use Firebase with the Firestore database for the backend."
+		},
+		"origin": {
+			"desc": "I like video games, so I have always wanted to develop or emulate some kind of video game since I started programming. Also, I knew that building this app would allow me to understand the rendering phase of React better, as this is a factor to consider in this library when you want to develop interactive apps with intervals."
+		},
+		"development": {
+			"f_desc": "First, I analyzed similar games that people had developed with react so I could figure out the minigames I would add and get an idea of how to build them. Then, I developed each game and the home page, iterating and refactoring code to improve performance and apply best practices.",
+			"s_desc": "Later, I started working on the sessions and authentication system of the application, developing the login and registration views, integrating Firebase, and modeling the documents that would make up the database in Firestore. Finally, I added the logic and components to build the scoring system."
+		},
+		"challenges": {
+			"desc": "During the development of the application, one of the challenges I faced was working with intervals since their closures do not allow values to change. In addition, another problem I faced was the double execution of effects related to React version 18, which caused bugs in games that use intervals, such as Flappy Bird or Tetris."
+		},
+		"learning": {
+			"desc": "Developing this project allowed me to improve my understanding of the rendering phase of React, as well as best practices regarding how to structure and manage application state. Also, I learned to recognize when to use effects and that state changes caused by the user should always go in the event handlers, which allows me to develop clean code and increase the application performance."
 		}
 	}
 }

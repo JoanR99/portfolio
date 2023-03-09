@@ -20,6 +20,7 @@ import ImageContainer from '../../components/ImageContainer';
 import WebAccessCard from '../../components/WebAccessCard';
 import CoroshopCard from '../../components/CoroshopCard';
 import { RiVuejsFill } from 'react-icons/ri';
+import TimeKillerCard from '../../components/TimeKillerCard';
 
 export async function getStaticProps({ locale }: { locale: string }) {
 	return {
@@ -188,6 +189,8 @@ const Home: NextPage = () => {
 						<WebAccessCard />
 
 						<CoroshopCard />
+
+						<TimeKillerCard />
 					</div>
 				</div>
 			</div>

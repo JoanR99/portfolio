@@ -2,6 +2,7 @@ import WebAccessCard from './WebAccessCard';
 import StickyNotesCard from './StickyNotesCard';
 import CoroshopCard from './CoroshopCard';
 import { useTranslation } from 'next-i18next';
+import TimeKillerCard from './TimeKillerCard';
 
 const Projects = () => {
 	const { t } = useTranslation('');
@@ -17,6 +18,8 @@ const Projects = () => {
 				<StickyNotesCard />
 
 				<CoroshopCard />
+
+				<TimeKillerCard />
 			</div>
 		</div>
 	);
