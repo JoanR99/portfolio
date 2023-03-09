@@ -27,6 +27,8 @@ import {
 	SiVitest,
 	SiHeadlessui,
 	SiReactquery,
+	SiSequelize,
+	SiPytest,
 } from 'react-icons/si';
 import { RiVuejsFill } from 'react-icons/ri';
 import { TbBrandRadixUi } from 'react-icons/tb';
@@ -252,6 +254,11 @@ const Skills = () => {
 				</SkillCard>
 
 				<SkillCard>
+					<SiSequelize className='sm:w-8" mr-2 h-6 w-6 text-blue-600 sm:h-8' />
+					<p className="font-medium">Sequelize</p>
+				</SkillCard>
+
+				<SkillCard>
 					<SiPostgresql className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
 					<p className="font-medium">PostgreSQL</p>
 				</SkillCard>
@@ -297,6 +304,11 @@ const Skills = () => {
 				<SkillCard>
 					<SiVitest className='sm:w-8" mr-2 h-6 w-6 text-yellow-600 sm:h-8' />
 					<p className="font-medium">Vitest</p>
+				</SkillCard>
+
+				<SkillCard>
+					<SiPytest className='sm:w-8" mr-2 h-6 w-6 text-blue-600 sm:h-8' />
+					<p className="font-medium">Pytest</p>
 				</SkillCard>
 
 				<SkillCard>

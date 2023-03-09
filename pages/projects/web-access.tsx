@@ -171,7 +171,7 @@ const Page: NextPage = () => {
 					<h4 className="text-xl font-bold text-teal-700">
 						{t('projects.other')}
 					</h4>
-					<div className="mt-8 grid w-full gap-6 md:grid-cols-2 md:gap-12">
+					<div className="mt-8 grid w-full gap-6 lg:grid-cols-3 lg:gap-8">
 						<StickyNotesCard />
 
 						<CoroshopCard />
