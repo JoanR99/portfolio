@@ -18,8 +18,6 @@ import VisitButton from '../../components/VisitButton';
 import ImageContainer from '../../components/ImageContainer';
 import WebAccessCard from '../../components/WebAccessCard';
 import StickyNotesCard from '../../components/StickyNotesCard';
-import { RxStitchesLogo } from 'react-icons/rx';
-import { TbBrandRadixUi } from 'react-icons/tb';
 import TimeKillerCard from '../../components/TimeKillerCard';
 
 export async function getStaticProps({ locale }: { locale: string }) {
@@ -78,8 +76,6 @@ const Home: NextPage = () => {
 									<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 									<SiReact className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 									<SiRedux className='sm:w-8" mr-4 h-6 w-6 text-purple-700 sm:h-8' />
-									<RxStitchesLogo className='sm:w-8" mr-4 h-7 w-7 text-black sm:h-8' />
-									<TbBrandRadixUi className='sm:w-8" mr-4 h-7 w-7 text-black sm:h-8' />
 									<SiNodedotjs className='sm:w-8" mr-4 h-6 w-6 text-lime-700 sm:h-8' />
 									<SiNestjs className='sm:w-8" mr-4 h-6 w-6 text-red-700 sm:h-8' />
 									<SiGraphql className='sm:w-8" mr-4 h-6 w-6 text-pink-700 sm:h-8' />

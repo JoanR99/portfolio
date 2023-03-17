@@ -17,7 +17,6 @@ import {
 	SiSvelte,
 	SiPython,
 	SiRedux,
-	SiFastify,
 	SiJest,
 	SiPostman,
 	SiPrisma,
@@ -25,14 +24,11 @@ import {
 	SiStyledcomponents,
 	SiFigma,
 	SiVitest,
-	SiHeadlessui,
 	SiReactquery,
 	SiSequelize,
 	SiPytest,
 } from 'react-icons/si';
 import { RiVuejsFill } from 'react-icons/ri';
-import { TbBrandRadixUi } from 'react-icons/tb';
-import { RxStitchesLogo } from 'react-icons/rx';
 import { motion } from 'framer-motion';
 import SkillCard from './SkillCard';
 import { useTranslation } from 'next-i18next';
@@ -161,21 +157,6 @@ const Skills = () => {
 				</SkillCard>
 
 				<SkillCard>
-					<SiNextdotjs className='sm:w-8" mr-2 h-6 w-6 text-black sm:h-8' />
-					<p className="font-medium">Next</p>
-				</SkillCard>
-
-				<SkillCard>
-					<SiHeadlessui className='sm:w-8" mr-2 h-6 w-6 text-indigo-700 sm:h-8' />
-					<p className="font-medium">Headless UI</p>
-				</SkillCard>
-
-				<SkillCard>
-					<TbBrandRadixUi className='sm:w-8" mr-2 h-7 w-7 text-black sm:h-8' />
-					<p className="font-medium">Radix UI</p>
-				</SkillCard>
-
-				<SkillCard>
 					<SiSass className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
 					<p className="font-medium">SASS</p>
 				</SkillCard>
@@ -188,11 +169,6 @@ const Skills = () => {
 				<SkillCard>
 					<SiStyledcomponents className='sm:w-8" mr-2 h-8 w-8 text-pink-400 sm:h-8' />
 					<p className="font-medium">Styled Components</p>
-				</SkillCard>
-
-				<SkillCard>
-					<RxStitchesLogo className='sm:w-8" mr-2 h-7 w-7 text-black sm:h-8' />
-					<p className="font-medium">Stitches</p>
 				</SkillCard>
 
 				<SkillCard>
@@ -231,11 +207,6 @@ const Skills = () => {
 				<SkillCard>
 					<SiNestjs className='sm:w-8" mr-2 h-6 w-6 text-red-700 sm:h-8' />
 					<p className="font-medium">Nest</p>
-				</SkillCard>
-
-				<SkillCard>
-					<SiFastify className='sm:w-8" mr-2 h-6 w-6 text-black sm:h-8' />
-					<p className="font-medium">Fastify</p>
 				</SkillCard>
 
 				<SkillCard>
@@ -286,6 +257,11 @@ const Skills = () => {
 				}}
 				className="mt-6 flex flex-wrap justify-center gap-6 md:justify-start"
 			>
+				<SkillCard>
+					<SiNextdotjs className='sm:w-8" mr-2 h-6 w-6 text-black sm:h-8' />
+					<p className="font-medium">Next</p>
+				</SkillCard>
+
 				<SkillCard>
 					<SiGraphql className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
 					<p className="font-medium">GraphQL</p>

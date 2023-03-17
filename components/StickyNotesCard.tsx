@@ -1,15 +1,14 @@
 import Link from 'next/link';
 import { useTranslation } from 'next-i18next';
 import {
-	SiFastify,
 	SiTailwindcss,
 	SiNodedotjs,
 	SiPostgresql,
 	SiPrisma,
 	SiTypescript,
-	SiVitest,
-	SiHeadlessui,
 	SiReactquery,
+	SiExpress,
+	SiJest,
 } from 'react-icons/si';
 import { RiVuejsFill } from 'react-icons/ri';
 import BlurImage from './BlurImage';
@@ -36,16 +35,15 @@ const StickyNotesCard = () => {
 					<RiVuejsFill className='sm:w-8" mr-2 h-6 w-6 text-green-700 sm:h-8' />
 					<SiReactquery className='sm:w-8" mr-2 h-6 w-6 text-red-600 sm:h-8' />
 					<SiTailwindcss className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
-					<SiHeadlessui className='sm:w-8" mr-2 h-6 w-6 text-indigo-700 sm:h-8' />
 					<SiNodedotjs className='sm:w-8" mr-2 h-6 w-6 text-lime-700 sm:h-8' />
-					<SiFastify className='sm:w-8" mr-2 h-6 w-6 text-black sm:h-8' />
+					<SiExpress className='sm:w-8" mr-2 h-6 w-6 text-lime-700 sm:h-8' />
 					<SiPrisma className='sm:w-8" mr-2 h-6 w-6 text-blue-900 sm:h-8' />
 					<SiPostgresql className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
-					<SiVitest className='sm:w-8" mr-2 h-6 w-6 text-yellow-600 sm:h-8' />
+					<SiJest className='sm:w-8" mr-2 h-6 w-6 text-red-700 sm:h-8' />
 				</div>
 				<div className="mt-6 flex w-full justify-center">
 					<a
-						href="https://github.com/JoanR99/sticky-notes-server-fastify"
+						href="https://github.com/JoanR99/sticky-notes-server"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="mr-4 flex flex-col items-center justify-center"
