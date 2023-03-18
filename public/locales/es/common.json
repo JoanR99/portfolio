@@ -7,7 +7,7 @@
 		"connect": "Vamos a conectar"
 	},
 	"hero": {
-		"greet": "¿Hola que tal? Soy",
+		"greet": "Hola, ¿que tal? Soy",
 		"banner": {
 			"developer": "Desarrollador Full Stack",
 			"engineer": "Ingeniero de Sistemas"
