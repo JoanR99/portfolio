@@ -27,6 +27,7 @@ import {
 	SiReactquery,
 	SiSequelize,
 	SiPytest,
+	SiNodedotjs,
 } from 'react-icons/si';
 import { RiVuejsFill } from 'react-icons/ri';
 import { motion } from 'framer-motion';
@@ -194,6 +195,10 @@ const Skills = () => {
 				}}
 				className="mt-6 flex flex-wrap justify-center gap-6 md:justify-start"
 			>
+				<SkillCard>
+					<SiNodedotjs className='sm:w-8" mr-2 h-6 w-6 text-lime-700 sm:h-8' />
+					<p className="font-medium">Node</p>
+				</SkillCard>
 				<SkillCard>
 					<SiExpress className='sm:w-8" mr-2 h-6 w-6 text-lime-700 sm:h-8' />
 					<p className="font-medium">Express</p>
