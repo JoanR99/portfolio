@@ -10,6 +10,8 @@ import {
 	SiPython,
 	SiFastapi,
 	SiPytest,
+	SiJavascript,
+	SiReact,
 } from 'react-icons/si';
 import GithubButton from '../../components/GithubButton';
 import VisitButton from '../../components/VisitButton';
@@ -47,10 +49,10 @@ const Page: NextPage = () => {
 						<GithubButton href="https://github.com/JoanR99/web-access-server-fastapi">
 							Backend
 						</GithubButton>
-						<GithubButton href="https://github.com/JoanR99/web-access-client-svelte">
+						<GithubButton href="https://github.com/JoanR99/web-access-client">
 							Frontend
 						</GithubButton>
-						<VisitButton href="https://web-access-client-svelte.vercel.app/">
+						<VisitButton href="https://web-access-client.vercel.app/">
 							{t('visit')}
 						</VisitButton>
 					</div>
@@ -70,8 +72,8 @@ const Page: NextPage = () => {
 							<div>
 								<h4 className="text-xl font-bold text-teal-700">Stack</h4>
 								<div className="mt-4 flex w-fit">
-									<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-blue-600 sm:h-8' />
-									<SiSvelte className='sm:w-8" mr-4 h-6 w-6 text-orange-600 sm:h-8' />
+									<SiJavascript className='sm:w-8" mr-4 h-6 w-6 text-yellow-400 sm:h-8' />
+									<SiReact className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 									<SiSass className='sm:w-8" mr-4 h-6 w-6 text-pink-700 sm:h-8' />
 									<SiPython className='sm:w-8" mr-4 h-6 w-6 text-yellow-600 sm:h-8' />
 									<SiFastapi className='sm:w-8" mr-4 h-6 w-6 text-green-700 sm:h-8' />

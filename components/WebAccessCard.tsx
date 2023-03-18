@@ -4,11 +4,11 @@ import { BsGithub } from 'react-icons/bs';
 import { IoOpen } from 'react-icons/io5';
 import {
 	SiFastapi,
-	SiTypescript,
 	SiPython,
-	SiSvelte,
 	SiSass,
 	SiPytest,
+	SiReact,
+	SiJavascript,
 } from 'react-icons/si';
 import BlurImage from './BlurImage';
 import ProjectCard from './ProjectCard';
@@ -28,8 +28,8 @@ const WebAccessCard = () => {
 					{t('projects.web_access.desc')}
 				</p>
 				<div className="mt-4 flex flex-wrap justify-center gap-y-2">
-					<SiTypescript className='sm:w-8" mr-2 h-6 w-6 text-blue-600 sm:h-8' />
-					<SiSvelte className='sm:w-8" mr-2 h-6 w-6 text-orange-600 sm:h-8' />
+					<SiJavascript className='sm:w-8" mr-2 h-6 w-6 text-yellow-400 sm:h-8' />
+					<SiReact className='sm:w-8" mr-2 h-6 w-6 text-sky-600 sm:h-8' />
 					<SiSass className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
 					<SiPython className='sm:w-8" mr-2 h-6 w-6 text-yellow-600 sm:h-8' />
 					<SiFastapi className='sm:w-8" mr-2 h-6 w-6 text-green-700 sm:h-8' />
@@ -46,7 +46,7 @@ const WebAccessCard = () => {
 					</a>
 
 					<a
-						href="https://github.com/JoanR99/web-access-client-svelte"
+						href="https://github.com/JoanR99/web-access-client"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="mr-4 flex flex-col items-center justify-center"
@@ -55,7 +55,7 @@ const WebAccessCard = () => {
 					</a>
 
 					<a
-						href="https://web-access-client-svelte.vercel.app/"
+						href="https://web-access-client.vercel.app/"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="mr-4 flex flex-col items-center justify-center"

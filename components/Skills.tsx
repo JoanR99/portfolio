@@ -152,11 +152,6 @@ const Skills = () => {
 				</SkillCard>
 
 				<SkillCard>
-					<SiSvelte className='sm:w-8" mr-2 h-6 w-6 text-orange-600 sm:h-8' />
-					<p className="font-medium">Svelte</p>
-				</SkillCard>
-
-				<SkillCard>
 					<SiSass className='sm:w-8" mr-2 h-6 w-6 text-pink-700 sm:h-8' />
 					<p className="font-medium">SASS</p>
 				</SkillCard>
