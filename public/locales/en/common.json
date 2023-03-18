@@ -43,7 +43,7 @@
 			"desc": "E-commerce with Stripe or PayPal payments."
 		},
 		"time_killer": {
-			"desc": "Webapp with several offline games"
+			"desc": "Webapp with several games"
 		},
 		"titles": {
 			"origin": "Idea origin",
@@ -132,7 +132,7 @@
 		}
 	},
 	"time_killer": {
-		"desc": "Time Killer is a web app that has several offline games such as Simon's game, Snake game, Flappy Bird, Memory, and Tetris. In addition, it allows the user to log in to access the ranking of best scores.",
+		"desc": "Time Killer is a web app that has several games such as Simon's game, Snake game, Flappy Bird, Memory, and Tetris. In addition, it allows the user to log in to access the ranking of best scores.",
 		"stack": {
 			"desc": "I developed the application with Next.js, which uses React as a library to build the interfaces. Also, I use Tailwind CSS for the styles and the hooks available in React to manage the application state. On the other hand, I use Firebase with the Firestore database for the backend."
 		},

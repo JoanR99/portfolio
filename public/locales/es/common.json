@@ -43,7 +43,7 @@
 			"desc": "E-commerce con pagos en Stripe o PayPal."
 		},
 		"time_killer": {
-			"desc": "Webapp que dispone de varios minijuegos offline"
+			"desc": "Webapp que dispone de varios minijuegos."
 		},
 		"titles": {
 			"origin": "Origen de la Idea",
@@ -132,7 +132,7 @@
 		}
 	},
 	"time_killer": {
-		"desc": "Time Killer es una webapp que dispone de varios minijuegos offline como el juego de Simon, la Culebrita, Flappy Bird, Memoria y Tetris. Además, permite al usuario iniciar sesión para acceder al ranking de mejores puntuaciones.",
+		"desc": "Time Killer es una webapp que dispone de varios minijuegos como el juego de Simon, la Culebrita, Flappy Bird, Memoria y Tetris. Además, permite al usuario iniciar sesión para acceder al ranking de mejores puntuaciones.",
 		"stack": {
 			"desc": "La aplicación fue desarrollada con el framework Next el cual utiliza React como librería para desarrollar las interfaces. Para los estilos utilice Tailwind CSS y para manejar el estado de la aplicación utilice los hooks básicos de los que dispone React para realizar custom hooks enfocados en este aspecto. Por su parte, para el backend utilice el BaaS Firebase con su base de datos Firestore."
 		},
