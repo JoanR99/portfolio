@@ -58,7 +58,7 @@ const FormContact = () => {
 	return (
 		<form
 			onSubmit={submitHandler}
-			className="mt-8 flex flex-col justify-between gap-4 rounded-xl border p-4 shadow-xl shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700  md:w-3/6"
+			className="mt-8 flex flex-col justify-between gap-4 rounded-xl border bg-neutral-100 p-4 shadow-xl shadow-gray-400 dark:border-[#1E293B] dark:bg-slate-900 dark:shadow-teal-700  md:w-3/6"
 		>
 			<div className="flex flex-col gap-4 sm:flex-row sm:gap-2">
 				<div className="flex w-full flex-col gap-1 sm:w-1/2">

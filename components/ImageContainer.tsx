@@ -11,14 +11,14 @@ const ImageContainer = ({ children, className }: Props) => {
 		<motion.div
 			initial={{
 				opacity: 0,
-				scale: 0.5,
+				scale: 0.8,
 			}}
 			whileInView={{
 				opacity: 1,
 				scale: 1,
 			}}
 			transition={{
-				duration: 1.5,
+				duration: 0.5,
 			}}
 			className={className}
 		>

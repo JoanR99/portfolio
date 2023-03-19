@@ -11,22 +11,19 @@ import {
 	SiTypescript,
 } from 'react-icons/si';
 import BlurImage from './BlurImage';
-import ProjectCard from './ProjectCard';
-import { BsGithub } from 'react-icons/bs';
-import { IoOpen } from 'react-icons/io5';
 
 const CoroshopCard = () => {
 	const { t } = useTranslation('');
 
 	return (
-		<ProjectCard>
+		<div className="grid grid-cols-1 gap-2 rounded-xl border bg-neutral-100 p-2 shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:bg-slate-900 dark:shadow-teal-700">
 			<BlurImage src="/images/coroshop.png" alt="Coroshop" />
 
 			<div className="flex flex-col items-center justify-between p-4">
 				<h3 className="text-xl font-bold text-teal-700 lg:text-2xl">
 					Coroshop
 				</h3>
-				<p className="mt-2 text-center text-sm md:text-left">
+				<p className="mt-2 text-center text-base font-light leading-relaxed text-gray-600 dark:text-gray-300">
 					{t('projects.coroshop.desc')}
 				</p>
 				<div className="mt-4 flex flex-wrap justify-center gap-y-2">
@@ -40,42 +37,13 @@ const CoroshopCard = () => {
 					<SiJest className='sm:w-8" mr-2 h-6 w-6 text-red-800 sm:h-8' />
 				</div>
 
-				<div className="mt-6 flex w-full justify-center">
-					<a
-						href="https://github.com/JoanR99/coroshop-server"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="mr-4 flex flex-col items-center justify-center"
-					>
-						<BsGithub className="h-6 w-6 text-pink-700 hover:scale-105 hover:opacity-90 sm:h-7 sm:w-7" />
-					</a>
-
-					<a
-						href="https://github.com/JoanR99/coroshop-client"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="mr-4 flex flex-col items-center justify-center"
-					>
-						<BsGithub className="h-6 w-6 text-pink-700 hover:scale-105 hover:opacity-90 sm:h-7 sm:w-7" />
-					</a>
-
-					<a
-						href="https://coroshop-client.vercel.app/"
-						target="_blank"
-						rel="noopener noreferrer"
-						className="mr-4 flex flex-col items-center justify-center"
-					>
-						<IoOpen className="h-6 w-6 text-pink-700  hover:scale-105 hover:opacity-90 sm:h-7 sm:w-7" />
-					</a>
-				</div>
-
 				<Link href="/projects/coroshop">
 					<p className="mt-4 cursor-pointer text-sm font-medium text-pink-700">
 						{t('projects.action')}
 					</p>
 				</Link>
 			</div>
-		</ProjectCard>
+		</div>
 	);
 };
 

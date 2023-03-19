@@ -22,61 +22,33 @@ const Header = () => {
 		open: {
 			x: 0,
 			opacity: 1,
-			transition: { duration: 1 },
+			transition: { duration: 0.3 },
 		},
 		closed: {
 			x: -750,
 			opacity: 0,
-			transition: { duration: 1 },
+			transition: { duration: 0.3 },
 		},
 	};
 
 	return (
-		<header className="w fixed top-0 z-[100] h-16 w-full bg-[#ecf0f3] text-teal-700 shadow-lg dark:bg-[#1E293B] md:shadow-lg">
+		<header className="w fixed top-0 z-[100] h-16 w-full bg-neutral-100 text-teal-700 shadow-lg dark:bg-slate-800 md:shadow-lg">
 			<section className="flex h-full w-full items-center justify-between px-2 2xl:px-16">
-				<motion.h1
-					initial={{
-						x: -500,
-						opacity: 0,
-						scale: 0.5,
-					}}
-					animate={{
-						x: 0,
-						opacity: 1,
-						scale: 1,
-					}}
-					transition={{
-						duration: 1.5,
-					}}
-					className="text-2xl font-bold sm:text-3xl md:text-4xl"
-				>
+				<h1 className="text-2xl font-bold sm:text-3xl md:text-4xl">
 					{!router.pathname.includes('/projects') ? (
 						<a href="#hero">JR</a>
 					) : (
 						<Link href="/#hero">JR</Link>
 					)}
-				</motion.h1>
+				</h1>
 
 				<div>
-					<motion.nav
-						initial={{
-							y: -500,
-							opacity: 0,
-							scale: 0.5,
-						}}
-						animate={{
-							y: 0,
-							opacity: 1,
-							scale: 1,
-						}}
-						transition={{
-							duration: 1.5,
-						}}
+					<nav
 						className="hidden space-x-8 text-lg font-medium md:flex"
 						aria-label="main"
 					>
 						<NavItems />
-					</motion.nav>
+					</nav>
 
 					<div onClick={handleNav} className="cursor-pointer md:hidden">
 						<AiOutlineMenu size={25} />

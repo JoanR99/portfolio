@@ -43,22 +43,24 @@ const Page: NextPage = () => {
 						WebAccess
 					</h3>
 
-					<p className="text-md mt-4">{t('web_access.desc')}</p>
+					<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+						{t('web_access.desc')}
+					</p>
 
 					<div className="mt-6 flex w-full justify-center">
 						<GithubButton href="https://github.com/JoanR99/web-access-server-fastapi">
-							Backend
+							<p className="text-sm md:text-base">Backend</p>
 						</GithubButton>
 						<GithubButton href="https://github.com/JoanR99/web-access-client">
-							Frontend
+							<p className="text-sm md:text-base">Frontend</p>
 						</GithubButton>
 						<VisitButton href="https://web-access-client.vercel.app/">
-							{t('visit')}
+							<p className="text-sm md:text-base">{t('visit')}</p>
 						</VisitButton>
 					</div>
 
 					<div className="mt-8 grid w-full grid-cols-1 lg:mt-10 lg:grid-cols-2 lg:items-center lg:gap-x-10">
-						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-2">
+						<ImageContainer className="m-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B]  dark:shadow-teal-700 lg:order-2">
 							<Image
 								src="/images/web-access-frame.png"
 								alt="WebAccess"
@@ -70,7 +72,9 @@ const Page: NextPage = () => {
 
 						<div className="mt-8 flex h-fit flex-col lg:mt-0">
 							<div>
-								<h4 className="text-xl font-bold text-teal-700">Stack</h4>
+								<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
+									Stack
+								</h4>
 								<div className="mt-4 flex w-fit">
 									<SiJavascript className='sm:w-8" mr-4 h-6 w-6 text-yellow-400 sm:h-8' />
 									<SiReact className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
@@ -79,7 +83,9 @@ const Page: NextPage = () => {
 									<SiFastapi className='sm:w-8" mr-4 h-6 w-6 text-green-700 sm:h-8' />
 									<SiPytest className='sm:w-8" mr-4 h-6 w-6 text-blue-600 sm:h-8' />
 								</div>
-								<p className="text-md mt-4">{t('web_access.stack.desc')}</p>
+								<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+									{t('web_access.stack.desc')}
+								</p>
 							</div>
 						</div>
 					</div>
@@ -96,10 +102,12 @@ const Page: NextPage = () => {
 						</ImageContainer>
 
 						<div className="mt-8 h-fit">
-							<h4 className="text-xl font-bold text-teal-700">
+							<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 								{t('projects.titles.origin')}
 							</h4>
-							<p className="text-md mt-4">{t('web_access.origin.desc')}</p>
+							<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+								{t('web_access.origin.desc')}
+							</p>
 						</div>
 					</div>
 
@@ -115,13 +123,13 @@ const Page: NextPage = () => {
 						</ImageContainer>
 
 						<div className="my-8 h-fit lg:col-span-2 lg:mb-4">
-							<h4 className="text-xl font-bold text-teal-700">
+							<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 								{t('projects.titles.development')}
 							</h4>
-							<p className="text-md mt-4">
+							<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
 								{t('web_access.development.f_desc')}
 							</p>
-							<p className="text-md mt-2">
+							<p className="mt-2 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
 								{t('web_access.development.s_desc')}
 							</p>
 						</div>
@@ -139,10 +147,12 @@ const Page: NextPage = () => {
 
 					<div className="my-8 lg:mt-10">
 						<div className="h-fit lg:col-span-2">
-							<h4 className="text-xl font-bold text-teal-700">
+							<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 								{t('projects.titles.challenges')}
 							</h4>
-							<p className="text-md mt-4">{t('web_access.challenges.desc')}</p>
+							<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+								{t('web_access.challenges.desc')}
+							</p>
 						</div>
 					</div>
 
@@ -159,10 +169,10 @@ const Page: NextPage = () => {
 
 						<div className="mt-8 flex h-fit flex-col">
 							<div>
-								<h4 className="text-xl font-bold text-teal-700">
+								<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 									{t('projects.titles.learning')}
 								</h4>
-								<p className="text-md mt-4">
+								<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
 									{t('web_access.learning.f_desc')}
 								</p>
 							</div>
@@ -170,7 +180,7 @@ const Page: NextPage = () => {
 					</div>
 				</div>
 				<div className=" mt-24">
-					<h4 className="text-xl font-bold text-teal-700">
+					<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 						{t('projects.other')}
 					</h4>
 					<div className="mt-8 grid w-full gap-6 lg:grid-cols-3 lg:gap-8">

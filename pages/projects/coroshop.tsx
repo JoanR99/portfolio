@@ -44,17 +44,19 @@ const Home: NextPage = () => {
 						Coroshop
 					</h3>
 
-					<p className="text-md mt-4">{t('coroshop.desc')}</p>
+					<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+						{t('coroshop.desc')}
+					</p>
 
 					<div className="mt-6 flex w-full justify-center">
 						<GithubButton href="https://github.com/JoanR99/coroshop-server">
-							Backend
+							<p className="text-sm md:text-base">Backend</p>
 						</GithubButton>
 						<GithubButton href="https://github.com/JoanR99/coroshop-client">
-							Frontend
+							<p className="text-sm md:text-base">Frontend</p>
 						</GithubButton>
 						<VisitButton href="https://coroshop-client.vercel.app/">
-							{t('visit')}
+							<p className="text-sm md:text-base">{t('visit')}</p>
 						</VisitButton>
 					</div>
 
@@ -71,7 +73,9 @@ const Home: NextPage = () => {
 
 						<div className="mt-8 flex h-fit flex-col lg:mt-0">
 							<div>
-								<h4 className="text-xl font-bold text-teal-700">Stack</h4>
+								<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
+									Stack
+								</h4>
 								<div className="mt-4 flex w-fit">
 									<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 									<SiReact className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
@@ -82,8 +86,12 @@ const Home: NextPage = () => {
 									<SiMongodb className='sm:w-8" mr-4 h-6 w-6 text-green-700 sm:h-8' />
 									<SiJest className='sm:w-8" mr-4 h-6 w-6 text-red-800 sm:h-8' />
 								</div>
-								<p className="text-md mt-4">{t('coroshop.stack.f_desc')}</p>
-								<p className="text-md mt-2">{t('coroshop.stack.s_desc')}</p>
+								<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+									{t('coroshop.stack.f_desc')}
+								</p>
+								<p className="mt-2 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+									{t('coroshop.stack.s_desc')}
+								</p>
 							</div>
 						</div>
 					</div>
@@ -100,10 +108,12 @@ const Home: NextPage = () => {
 						</ImageContainer>
 
 						<div className="mt-8 h-fit">
-							<h4 className="text-xl font-bold text-teal-700">
+							<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 								{t('projects.titles.origin')}
 							</h4>
-							<p className="text-md mt-4">{t('coroshop.origin.desc')}</p>
+							<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+								{t('coroshop.origin.desc')}
+							</p>
 						</div>
 					</div>
 
@@ -119,11 +129,15 @@ const Home: NextPage = () => {
 						</ImageContainer>
 
 						<div className="my-8 h-fit lg:col-span-2 lg:mb-4">
-							<h4 className="text-xl font-bold text-teal-700">
+							<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 								{t('projects.titles.development')}
 							</h4>
-							<p className="text-md mt-4">{t('coroshop.development.f_desc')}</p>
-							<p className="text-md mt-2">{t('coroshop.development.s_desc')}</p>
+							<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+								{t('coroshop.development.f_desc')}
+							</p>
+							<p className="mt-2 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+								{t('coroshop.development.s_desc')}
+							</p>
 						</div>
 
 						<ImageContainer className="m-2 mt-2 h-fit w-full rounded-xl shadow-lg shadow-gray-400 dark:border-[#1E293B] dark:shadow-teal-700 lg:order-3 lg:mt-6">
@@ -139,11 +153,15 @@ const Home: NextPage = () => {
 
 					<div className="my-8 lg:mt-10">
 						<div className="h-fit lg:col-span-2">
-							<h4 className="text-xl font-bold text-teal-700">
+							<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 								{t('projects.titles.challenges')}
 							</h4>
-							<p className="text-md mt-4">{t('coroshop.challenges.f_desc')}</p>
-							<p className="text-md mt-2">{t('coroshop.challenges.s_desc')}</p>
+							<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+								{t('coroshop.challenges.f_desc')}
+							</p>
+							<p className="mt-2 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+								{t('coroshop.challenges.s_desc')}
+							</p>
 						</div>
 					</div>
 
@@ -160,16 +178,18 @@ const Home: NextPage = () => {
 
 						<div className="mt-8 flex h-fit flex-col">
 							<div>
-								<h4 className="text-xl font-bold text-teal-700">
+								<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 									{t('projects.titles.learning')}
 								</h4>
-								<p className="text-md mt-4">{t('coroshop.learning.f_desc')}</p>
+								<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+									{t('coroshop.learning.f_desc')}
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className=" mt-24">
-					<h4 className="text-xl font-bold text-teal-700">
+					<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 						{t('projects.other')}
 					</h4>
 					<div className="mt-8 grid w-full gap-6 lg:grid-cols-3 lg:gap-8">

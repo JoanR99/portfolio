@@ -9,7 +9,7 @@ const TypingBanner = () => {
 	});
 
 	return (
-		<h2 className="text-center text-xl font-bold sm:text-2xl md:text-3xl lg:text-4xl">
+		<h2 className="font-semi-bold text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl">
 			<span className="text-teal-600">{text}</span>
 			<Cursor cursorColor="#0D9488" />
 		</h2>

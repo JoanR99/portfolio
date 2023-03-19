@@ -40,15 +40,17 @@ const Page: NextPage = () => {
 						Time Killer
 					</h3>
 
-					<p className="text-md mt-4">{t('time_killer.desc')}</p>
+					<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+						{t('time_killer.desc')}
+					</p>
 
 					<div className="mt-6 flex w-full justify-center">
 						<GithubButton href="https://github.com/JoanR99/time-killer">
-							Repo
+							<p className="text-sm md:text-base">Repo</p>
 						</GithubButton>
 
 						<VisitButton href="https://time-killer.vercel.app/">
-							{t('visit')}
+							<p className="text-sm md:text-base">{t('visit')}</p>
 						</VisitButton>
 					</div>
 
@@ -65,7 +67,9 @@ const Page: NextPage = () => {
 
 						<div className="mt-8 flex h-fit flex-col lg:mt-0">
 							<div>
-								<h4 className="text-xl font-bold text-teal-700">Stack</h4>
+								<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
+									Stack
+								</h4>
 								<div className="mt-4 flex w-fit">
 									<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-blue-600 sm:h-8' />
 									<SiNextdotjs className='sm:w-8" mr-4 h-6 w-6 text-black sm:h-8' />
@@ -73,7 +77,9 @@ const Page: NextPage = () => {
 									<SiTailwindcss className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 									<SiFirebase className='sm:w-8" mr-4 h-6 w-6 text-orange-500 sm:h-8' />
 								</div>
-								<p className="text-md mt-4">{t('time_killer.stack.desc')}</p>
+								<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+									{t('time_killer.stack.desc')}
+								</p>
 							</div>
 						</div>
 					</div>
@@ -90,10 +96,12 @@ const Page: NextPage = () => {
 						</ImageContainer>
 
 						<div className="mt-8 h-fit">
-							<h4 className="text-xl font-bold text-teal-700">
+							<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 								{t('projects.titles.origin')}
 							</h4>
-							<p className="text-md mt-4">{t('time_killer.origin.desc')}</p>
+							<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+								{t('time_killer.origin.desc')}
+							</p>
 						</div>
 					</div>
 
@@ -109,13 +117,13 @@ const Page: NextPage = () => {
 						</ImageContainer>
 
 						<div className="my-8 h-fit lg:col-span-2 lg:mb-4">
-							<h4 className="text-xl font-bold text-teal-700">
+							<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 								{t('projects.titles.development')}
 							</h4>
-							<p className="text-md mt-4">
+							<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
 								{t('time_killer.development.f_desc')}
 							</p>
-							<p className="text-md mt-2">
+							<p className="mt-2 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
 								{t('time_killer.development.s_desc')}
 							</p>
 						</div>
@@ -133,10 +141,12 @@ const Page: NextPage = () => {
 
 					<div className="my-8 lg:mt-10">
 						<div className="h-fit lg:col-span-2">
-							<h4 className="text-xl font-bold text-teal-700">
+							<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 								{t('projects.titles.challenges')}
 							</h4>
-							<p className="text-md mt-4">{t('time_killer.challenges.desc')}</p>
+							<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+								{t('time_killer.challenges.desc')}
+							</p>
 						</div>
 					</div>
 
@@ -153,16 +163,18 @@ const Page: NextPage = () => {
 
 						<div className="mt-8 flex h-fit flex-col">
 							<div>
-								<h4 className="text-xl font-bold text-teal-700">
+								<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 									{t('projects.titles.learning')}
 								</h4>
-								<p className="text-md mt-4">{t('time_killer.learning.desc')}</p>
+								<p className="mt-4 text-sm font-light leading-relaxed text-gray-600 dark:text-gray-300 md:text-base">
+									{t('time_killer.learning.desc')}
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className=" mt-24">
-					<h4 className="text-xl font-bold text-teal-700">
+					<h4 className="text-xl font-bold text-teal-700 md:text-2xl">
 						{t('projects.other')}
 					</h4>
 					<div className="mt-8 grid w-full gap-6 lg:grid-cols-3 lg:gap-8">

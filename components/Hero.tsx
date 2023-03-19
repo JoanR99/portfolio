@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import { useTranslation } from 'next-i18next';
 import TypingBanner from './TypingBanner';
 import { useRouter } from 'next/router';
-import WebDev from './WebDev';
 
 const Hero = () => {
 	const { t } = useTranslation('');
@@ -17,87 +16,39 @@ const Hero = () => {
 			className="flex min-h-screen flex-col items-center justify-center md:mt-8"
 			id="hero"
 		>
-			<h2 className="text-center text-2xl font-bold sm:text-3xl md:mb-2 md:text-4xl lg:text-5xl">
-				{t('hero.greet')} <span className="text-teal-600">Joan Romero</span>
+			<h2 className="font-semi-bold text-center text-xl sm:text-3xl  md:mb-2 md:text-4xl lg:text-5xl">
+				{t('hero.greet')} Joan Romero
 			</h2>
 			<TypingBanner />
-			<p className="text-md mt-6 text-center sm:mt-8 sm:text-lg md:text-xl">
+			<p className="mt-6 mb-4 text-center text-base font-light text-gray-600 dark:text-gray-200 sm:mt-8 sm:text-lg md:text-xl">
 				{t('hero.skills')}
 			</p>
 
-			<div className="h-[180px] w-[250px] sm:h-[250px] sm:w-[350px] md:h-[300px] md:w-[450px] lg:h-[350px] lg:w-[550px]">
-				<WebDev />
-			</div>
-
 			<div className="mt-4 flex w-24 justify-around align-middle md:mt-1">
-				<motion.a
-					initial={{
-						x: -200,
-						opacity: 0,
-						scale: 0.5,
-					}}
-					animate={{
-						x: 0,
-						opacity: 1,
-						scale: 1,
-					}}
-					transition={{
-						duration: 1.5,
-					}}
+				<a
 					href="https://www.linkedin.com/in/joanr99/"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
 					<BsLinkedin className="h-6 w-6 text-pink-700  hover:scale-105 hover:opacity-90 sm:h-8 sm:w-8" />
-				</motion.a>
-				<motion.a
-					initial={{
-						x: 200,
-						opacity: 0,
-						scale: 0.5,
-					}}
-					animate={{
-						x: 0,
-						opacity: 1,
-						scale: 1,
-					}}
-					transition={{
-						duration: 1.5,
-					}}
+				</a>
+				<a
 					href="https://github.com/JoanR99"
 					target="_blank"
 					rel="noopener noreferrer"
 				>
 					<BsGithub className="h-6 w-6 text-pink-700  hover:scale-105 hover:opacity-90 sm:h-8 sm:w-8" />
-				</motion.a>
+				</a>
 			</div>
 
 			<div className="mt-8 flex justify-center">
-				<motion.a
-					initial={{
-						y: 100,
-						opacity: 0,
-						scale: 0.5,
-					}}
-					animate={{
-						y: 0,
-						opacity: 1,
-						scale: 1,
-					}}
-					transition={{
-						duration: 1.5,
-					}}
-					whileHover={{
-						scale: 1.05,
-						opacity: 0.9,
-						transition: { duration: 0.1 },
-					}}
-					className="rounded-xl border border-solid border-pink-600 bg-pink-700 p-2 font-medium text-white shadow-lg shadow-gray-400 dark:shadow-teal-700"
+				<a
+					className="rounded-md border border-pink-600 bg-pink-700 px-2 py-1 font-medium text-gray-100 shadow-lg shadow-gray-400 duration-200 ease-in hover:scale-105 hover:opacity-90 dark:shadow-none"
 					href={`/Joan_Romero_CV_${locale?.toUpperCase()}.pdf`}
 					download
 				>
 					{t('hero.cv')}
-				</motion.a>
+				</a>
 			</div>
 		</main>
 	);
