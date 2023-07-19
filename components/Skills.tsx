@@ -23,6 +23,7 @@ import {
 	SiPytest,
 	SiNodedotjs,
 } from 'react-icons/si';
+import { FaDatabase } from 'react-icons/fa';
 import { RiVuejsFill } from 'react-icons/ri';
 import SkillCard from './SkillCard';
 import { useTranslation } from 'next-i18next';
@@ -111,6 +112,12 @@ const Skills = () => {
 					<SiPython className='sm:w-8" mr-2 h-6 w-6 text-sm text-yellow-400 sm:h-8 md:text-base' />
 					<p className="font-regular text-base leading-relaxed text-gray-600 dark:text-gray-300">
 						Python
+					</p>
+				</SkillCard>
+				<SkillCard>
+					<FaDatabase className='sm:w-7" mr-2 h-5 w-5 text-sm text-sky-600 sm:h-7 md:text-base' />
+					<p className="font-regular text-base leading-relaxed text-gray-600 dark:text-gray-300">
+						SQL
 					</p>
 				</SkillCard>
 			</div>
