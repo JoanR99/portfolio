@@ -7,9 +7,7 @@ import {
 	SiTypescript,
 	SiNodedotjs,
 	SiPostgresql,
-	SiPrisma,
 	SiTailwindcss,
-	SiReactquery,
 	SiJest,
 	SiExpress,
 } from 'react-icons/si';
@@ -79,11 +77,9 @@ const Home: NextPage = () => {
 								<div className="mt-4 flex w-fit">
 									<SiTypescript className='sm:w-8" mr-4 h-6 w-6 text-blue-600 sm:h-8' />
 									<RiVuejsFill className='sm:w-8" mr-4 h-6 w-6 text-green-700 sm:h-8' />
-									<SiReactquery className='sm:w-8" mr-4 h-6 w-6 text-red-600 sm:h-8' />
 									<SiTailwindcss className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 									<SiNodedotjs className='sm:w-8" mr-4 h-6 w-6 text-lime-700 sm:h-8' />
 									<SiExpress className='sm:w-8" mr-4 h-6 w-6 text-lime-700 sm:h-8' />
-									<SiPrisma className='sm:w-8" mr-4 h-6 w-6 text-blue-900 sm:h-8' />
 									<SiPostgresql className='sm:w-8" mr-4 h-6 w-6 text-sky-600 sm:h-8' />
 									<SiJest className='sm:w-8" mr-4 h-6 w-6 text-red-700 sm:h-8' />
 								</div>

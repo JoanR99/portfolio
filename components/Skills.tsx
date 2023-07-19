@@ -14,18 +14,12 @@ import {
 	SiTailwindcss,
 	SiFirebase,
 	SiFastapi,
-	SiSvelte,
 	SiPython,
 	SiRedux,
 	SiJest,
-	SiPostman,
-	SiPrisma,
 	SiGit,
 	SiStyledcomponents,
-	SiFigma,
 	SiVitest,
-	SiReactquery,
-	SiSequelize,
 	SiPytest,
 	SiNodedotjs,
 } from 'react-icons/si';
@@ -166,13 +160,6 @@ const Skills = () => {
 						Redux
 					</p>
 				</SkillCard>
-
-				<SkillCard>
-					<SiReactquery className='sm:w-8" mr-2 h-6 w-6 text-sm text-red-600 sm:h-8 md:text-base' />
-					<p className="font-regular text-base leading-relaxed text-gray-600 dark:text-gray-300">
-						Tanstack Query
-					</p>
-				</SkillCard>
 			</div>
 
 			<h3 className="font-semi-bold mt-8 text-xl text-teal-700 md:text-2xl">
@@ -210,20 +197,6 @@ const Skills = () => {
 					<SiFirebase className='sm:w-8" mr-2 h-6 w-6 text-sm text-orange-500 sm:h-8 md:text-base' />
 					<p className="font-regular text-base leading-relaxed text-gray-600 dark:text-gray-300">
 						Firebase
-					</p>
-				</SkillCard>
-
-				<SkillCard>
-					<SiPrisma className='sm:w-8" mr-2 h-6 w-6 text-sm text-blue-800 sm:h-8 md:text-base' />
-					<p className="font-regular text-base leading-relaxed text-gray-600 dark:text-gray-300">
-						Prisma
-					</p>
-				</SkillCard>
-
-				<SkillCard>
-					<SiSequelize className='sm:w-8" mr-2 h-6 w-6 text-sm text-blue-600 sm:h-8 md:text-base' />
-					<p className="font-regular text-base leading-relaxed text-gray-600 dark:text-gray-300">
-						Sequelize
 					</p>
 				</SkillCard>
 
@@ -285,20 +258,6 @@ const Skills = () => {
 					<SiPytest className='sm:w-8" mr-2 h-6 w-6 text-sm text-blue-600 sm:h-8 md:text-base' />
 					<p className="font-regular text-base leading-relaxed text-gray-600 dark:text-gray-300">
 						Pytest
-					</p>
-				</SkillCard>
-
-				<SkillCard>
-					<SiPostman className='sm:w-8" mr-2 h-6 w-6 text-sm text-orange-700 sm:h-8 md:text-base' />
-					<p className="font-regular text-base leading-relaxed text-gray-600 dark:text-gray-300">
-						Postman
-					</p>
-				</SkillCard>
-
-				<SkillCard>
-					<SiFigma className='sm:w-8" mr-2 h-6 w-6 text-sm text-red-700 sm:h-8 md:text-base' />
-					<p className="font-regular text-base leading-relaxed text-gray-600 dark:text-gray-300">
-						Figma
 					</p>
 				</SkillCard>
 			</div>
